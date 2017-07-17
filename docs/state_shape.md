@@ -21,7 +21,8 @@
       tagline: "tagline",
       creator_id: 1,
       category_id: 1,
-      reward_ids: [1, 2, 3, 4, 5]
+      reward_ids: [1, 2, 3, 4, 5],
+      errors: []
     }
   },
 
