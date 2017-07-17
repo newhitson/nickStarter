@@ -29,7 +29,7 @@
 ### Rewards
 
 - `POST /api/rewards` -create a new reward
-- `GET /api/rewards/:id` -get a specific project
+- `GET /api/rewards/:id` -get a specific reward
 
 ### category
 
