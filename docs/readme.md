@@ -14,10 +14,35 @@ to back with different rewards.
 2. A production README, replacing this README
 3. Hosting on Heroku
 4. Projects
-5. Backing projects & rewards
+5. Categories / Discover feature
 6. Search
-7. Categories / Discover feature
+7. Backing projects & rewards 
 
 
-Design Docs
-.frontpage
+
+
+## Implementation Timeline
+
+### Phase 1: Backend setup and Front End User Authentication (2 days)
+
+**Objective:** Functioning rails project with front-end Authentication
+
+### Phase 2: Projects (2 days)
+
+**Objective:** Projects can be created, viewed, edited, and destroyed through the API.
+
+### Phase 3: Categories (2 days)
+
+**Objective:** Display project categories via nav-bar menu. Selecting a category displays all projects under that category.
+
+### Phase 4: Search (1.5 days)
+
+**Objective:** Search bar which loads the top results dynamically.
+
+### Phase 5: Backing projects & rewards (1.5 days)
+
+**Objective:** Users can back projects and receive rewards. Each pledge will increment the project's total funds raised.
+
+### Bonus Features (TBD)
+- [ ] Likes
+- [ ] Credit card payments
