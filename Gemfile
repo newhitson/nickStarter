@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
  gem 'binding_of_caller'
  gem 'pry-rails'
  gem 'annotate'
+ gem 'rails_12factor'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
