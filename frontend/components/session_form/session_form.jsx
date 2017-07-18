@@ -31,11 +31,11 @@ class SessionForm extends React.Component {
     this.props.processForm({user});
   }
 
-  navLink() {
+  navTitle() {
     if (this.props.formType === 'login') {
-      return <Link to="/signup">sign up instead</Link>;
+      return <h1 className="log_in_text">Log in</h1>;
     } else {
-      return <Link to="/login">log in instead</Link>;
+      return <h1 className="log_in_text">Sign up</h1>;
     }
   }
 
@@ -50,40 +50,50 @@ class SessionForm extends React.Component {
       </ul>
     );
   }
+  includeEmail() {
+    if (this.props.formType === 'signup' ){
+    return(
+      <label>
+        <input type="text"
+          placeholder="E-mail"
+          value={this.state.email}
+          onChange={this.update('email')}
+          className="login-input"
+        />
+      </label>
+    );
+    }
+  }
+
 
   render() {
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          Welcome to nickStarter!
           <br/>
-          Please {this.props.formType} or {this.navLink()}
+          {this.navTitle()}
           {this.renderErrors()}
           <div className="login-form">
             <br/>
-            <label>Username:
+            <label>
               <input type="text"
+                placeholder="username"
                 value={this.state.username}
                 onChange={this.update('username')}
                 className="login-input"
               />
             </label>
             <br/>
-            <label>Password:
+            <label>
               <input type="text"
+                placeholder="password"
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="login-input"
               />
             </label>
             <br/>
-            <label>E-mail:
-              <input type="text"
-                value={this.state.email}
-                onChange={this.update('email')}
-                className="login-input"
-              />
-            </label>
+            { this.includeEmail() }
             <br/>
             <input type="submit" value="Submit" />
           </div>
