@@ -34,6 +34,4 @@
 ### category
 
 - `GET /api/categories` -get all categories
-- `POST /api/categories` -create a new category
 - `GET /api/categories/:id` -get a specific category
-- `Delete api/categories/:id` -delete a category
