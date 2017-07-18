@@ -17,8 +17,15 @@ import SessionFormContainer from './session_form/session_form_container';
 const App = () => (
   <div>
     <header>
-      <h1>nickStarter</h1>
-      <GreetingContainer />
+      <nav className= "top_nav">
+        <nav className="top_nav_middle">
+          <a href="https://fontmeme.com/kickstarter-font/"><img src="https://fontmeme.com/permalink/170718/0b45c2e790d7ac2f0d6e769ed432209a.png" alt="kickstarter-font" /></a>
+          <a href="https://fontmeme.com/kickstarter-font/"><img src="https://fontmeme.com/permalink/170718/80fd61551d5c7e7d4b42d9c35a963714.png" alt="kickstarter-font" /></a>
+        </nav>
+        <nav className= "top_nav_right">
+        <GreetingContainer />
+        </nav>
+      </nav>
     </header>
     <switch>
       <AuthRoute path="/login" component={SessionFormContainer} />
