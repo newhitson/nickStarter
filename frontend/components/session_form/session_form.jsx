@@ -28,7 +28,6 @@ class SessionForm extends React.Component {
     e.preventDefault();
     const user = this.state;
     console.log(user);
-
     this.props.processForm({user});
   }
 
