@@ -10,7 +10,7 @@ const mapStateToProps = ({ session }) => ({
 
 const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout()),
-  clearErrors: error => dispatch(clearErrors())
+  clearErrors: () => dispatch(clearErrors())
 });
 
 export default connect(
