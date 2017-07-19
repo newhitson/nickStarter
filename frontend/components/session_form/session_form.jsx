@@ -50,6 +50,16 @@ class SessionForm extends React.Component {
       </ul>
     );
   }
+  newTo(){
+    if (this.props.formType === 'login' ){
+    return(
+      <span className="sign_up_span">New to Nickstarter?
+      <Link className="sign_up_link" to="/signup"> Sign up!</Link>
+      </span>
+    );
+    }
+  }
+
   includeEmail() {
     if (this.props.formType === 'signup' ){
     return(
@@ -77,7 +87,7 @@ class SessionForm extends React.Component {
             <br/>
             <label>
               <input type="text"
-                placeholder="username"
+                placeholder="Username"
                 value={this.state.username}
                 onChange={this.update('username')}
                 className="login-input"
@@ -86,7 +96,7 @@ class SessionForm extends React.Component {
             <br/>
             <label>
               <input type="text"
-                placeholder="password"
+                placeholder="Password"
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="login-input"
@@ -95,7 +105,10 @@ class SessionForm extends React.Component {
             <br/>
             { this.includeEmail() }
             <br/>
-            <input type="submit" value="Submit" />
+            <input className="session_submit_button" type="submit" value="Submit" />
+            <input className="session_guest_button" type="submit" value="Guest sign in" />
+            <br/>
+            { this.newTo() }
           </div>
         </form>
       </div>

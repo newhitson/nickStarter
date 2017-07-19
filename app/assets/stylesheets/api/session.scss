@@ -1,0 +1,93 @@
+
+
+
+.login-form-container{
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f1e4;
+  height: 600px;
+}
+
+.login-form-box{
+  margin-top: 7%;
+  height: 450px;
+  width: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.login-input{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 12px 5px 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.log_in_text{
+  margin-top: 10px;
+  margin-left: 23px;
+  font-size: 33px;
+  color: #2f2f2f;
+  align-self: flex-start;
+}
+
+.session_submit_button{
+  background-color: #2bde73;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+.session_submit_button:hover{
+  transition-delay:100ms;
+  background-color: #23B35C;
+  cursor: pointer;
+}
+
+.session_guest_button{
+  background-color: #3b5998;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 90%;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+.session_guest_button:hover{
+  transition-delay:100ms;
+  background-color: #2e4576;
+  cursor: pointer;
+}
+
+.sign_up_span{
+  font-weight: 350;
+  font-size: 13px;
+  color: #2f2f2f;
+  margin-left: 22%;
+}
+
+.sign_up_link{
+  color: blue;
+  font-weight: 450;
+}
