@@ -5,8 +5,9 @@
   border-width: 1px;
   display: flex;
   justify-content: center;
-  background-color: #f5f1e4;
   height: 600px;
+  z-index: -1;
+    background-color: #f5f1e4;
 }
 
 .login-form-box{

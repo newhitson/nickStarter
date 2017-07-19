@@ -1,0 +1,20 @@
+.login-signup{
+    display: flex;
+    flex-direction: row;
+}
+
+.auth_box{
+  margin: 5px;
+  margin-left: 20px;
+  height: 60px;
+
+  border-width: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth_box:hover {
+
+    border-bottom: 3px solid #2bde73;
+}
