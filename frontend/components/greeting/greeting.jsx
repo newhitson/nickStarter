@@ -17,8 +17,8 @@ const sessionLinks = (clearErrors) => (
 
 const personalGreeting = (currentUser, logout) => (
 	<hgroup className="header-group">
-    <h2 className="header-name">Hi, {currentUser.username}!</h2>
-    <button className="header-button" onClick={logout}>Log Out</button>
+    <h2 className="header-name">Your're logged in as {currentUser.username}!</h2>
+    <button className="sign_up_button" onClick={logout}>Log Out</button>
 	</hgroup>
 );
 
