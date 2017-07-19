@@ -9,15 +9,24 @@ class SessionForm extends React.Component {
       password: '',
       email: ''
     };
+    console.log(this.props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleGuestLogin = this.handleGuestLogin.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.loggedIn) {
-      this.props.history.push('/');
+    console.log('this was hit');
+    if(this.props.location.pathname !== nextProps.location.pathname){
+        this.props.clearErrors();
+        // this.props.dispatch({type:CLEAR_ERRORS});
     }
+    // if (nextProps.loggedIn) {
+    //   this.props.history.push('/');
+    // }
+    // luke says this isnt needed because of authroutes? removed on 7.19.17
   }
+
+
 
   update(field) {
     return e => this.setState({
@@ -28,7 +37,6 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    console.log(user);
     this.props.processForm({user});
   }
 
