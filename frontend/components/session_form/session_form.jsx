@@ -12,21 +12,19 @@ class SessionForm extends React.Component {
     console.log(this.props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleGuestLogin = this.handleGuestLogin.bind(this);
+    this.removeErrors = this.removeErrors.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log('this was hit');
-    if(this.props.location.pathname !== nextProps.location.pathname){
-        this.props.clearErrors();
-        // this.props.dispatch({type:CLEAR_ERRORS});
-    }
     // if (nextProps.loggedIn) {
     //   this.props.history.push('/');
     // }
     // luke says this isnt needed because of authroutes? removed on 7.19.17
   }
 
-
+  removeErrors(){
+    this.props.clearErrors();
+  }
 
   update(field) {
     return e => this.setState({
@@ -70,7 +68,9 @@ class SessionForm extends React.Component {
     if (this.props.formType === 'login' ){
     return(
       <span className="sign_up_span">New to Nickstarter?
-      <Link className="sign_up_link" to="/signup"> Sign up!</Link>
+      <Link className="sign_up_link"
+            to="/signup"
+            onClick={this.removeErrors}> Sign up!</Link>
       </span>
     );
     }
@@ -81,7 +81,9 @@ class SessionForm extends React.Component {
     return(
       <div className="have-account-box">
       <span className="have_account_span">Have an account?
-      <Link className="sign_up_link" to="/login"> Log in</Link>
+      <Link className="sign_up_link"
+            onClick={this.removeErrors}
+            to="/login"> Log in</Link>
       </span>
       </div>
     );
@@ -150,4 +152,4 @@ class SessionForm extends React.Component {
   }
 }
 
-export default withRouter(SessionForm);
+export default SessionForm;

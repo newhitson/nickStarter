@@ -6,11 +6,12 @@ class Api::ProjectsController < ApplicationController
   end
 
   def show
-
+    @project = Projects.find(params[:id])
   end
 
   def create
-
+    @project = Project.create!(project_params)
+    render :index
   end
 
   def update

@@ -9,14 +9,18 @@ export const receiveCurrentUser = currentUser => ({
   currentUser
 });
 
-export const receiveErrors = errors => ({
+export const receiveErrors = errors => {
+  return ({
   type: RECEIVE_ERRORS,
   errors
-});
+  });
+};
 
-export const clearErrors = () => ({
-  type: CLEAR_ERRORS,
-});
+export const clearErrors = () => {
+  return ({
+  type: CLEAR_ERRORS
+  });
+};
 
 export const signup = user => dispatch => (
   APIUtil.signup(user).then(cUser => (

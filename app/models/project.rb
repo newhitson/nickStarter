@@ -16,4 +16,8 @@
 #
 
 class Project < ApplicationRecord
+  validates :title, :image_url, :description, :tagline, :end_date,
+            :funding_goal, :creator_id, :category_id, presence: true
+
+
 end
