@@ -49,9 +49,9 @@ class SessionForm extends React.Component {
 
   renderErrors() {
     return(
-      <ul>
+      <ul className="auth_errors">
         {this.props.errors.map((error, i) => (
-          <li key={`error-${i}`}>
+          <li className="auth_error" key={`error-${i}`}>
             {error}
           </li>
         ))}
@@ -64,6 +64,18 @@ class SessionForm extends React.Component {
       <span className="sign_up_span">New to Nickstarter?
       <Link className="sign_up_link" to="/signup"> Sign up!</Link>
       </span>
+    );
+    }
+  }
+
+  haveAccount(){
+    if (this.props.formType === 'signup' ){
+    return(
+      <div className="have-account-box">
+      <span className="have_account_span">Have an account?
+      <Link className="sign_up_link" to="/login"> Log in</Link>
+      </span>
+      </div>
     );
     }
   }
@@ -87,6 +99,7 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div className="login-form-container">
+        {this.haveAccount()}
         <form onSubmit={this.handleSubmit} className="login-form-box">
           <br/>
           {this.navTitle()}

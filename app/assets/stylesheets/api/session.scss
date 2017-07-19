@@ -5,14 +5,16 @@
   border-width: 1px;
   display: flex;
   justify-content: center;
-  height: 600px;
+  align-items: center;
+  height: 800px;
   z-index: -1;
-    background-color: #f5f1e4;
+  background-color: #f5f1e4;
+  flex-direction: column;
 }
 
 .login-form-box{
-  margin-top: 7%;
-  height: 450px;
+
+  height: 550px;
   width: 350px;
   background-color: white;
   display: flex;
@@ -91,4 +93,34 @@
 .sign_up_link{
   color: blue;
   font-weight: 450;
+}
+
+.have_account_span{
+  font-weight: 350;
+  font-size: 13px;
+  color: #2f2f2f;
+  margin-left: 27%;
+}
+
+.have-account-box{
+  height: 50px;
+  width: 350px;
+  background-color: white;
+  display: flex;
+  margin-bottom: 1px;
+  align-items: center;
+}
+
+.auth_errors{
+  width: 315px;
+  background-color: red;
+  color: white;
+  margin-top: 40px;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+.auth_error{
+  margin: 10px;
+
 }
