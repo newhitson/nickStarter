@@ -10,6 +10,7 @@ class SessionForm extends React.Component {
       email: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleGuestLogin = this.handleGuestLogin.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -29,6 +30,13 @@ class SessionForm extends React.Component {
     const user = this.state;
     console.log(user);
     this.props.processForm({user});
+  }
+
+  handleGuestLogin(e) {
+    e.preventDefault();
+    let user = {username: "BobbyTables", password: "password"};
+    this.props.guestLogin({user})
+    .then(res => this.props.history.push('/'));
   }
 
   navTitle() {
@@ -105,8 +113,13 @@ class SessionForm extends React.Component {
             <br/>
             { this.includeEmail() }
             <br/>
-            <input className="session_submit_button" type="submit" value="Submit" />
-            <input className="session_guest_button" type="submit" value="Guest sign in" />
+            <input className="session_submit_button"
+                   type="submit"
+                   value="Submit" />
+            <input onClick={this.handleGuestLogin}
+                   className="session_guest_button"
+                   type="submit"
+                   value="Guest sign in" />
             <br/>
             { this.newTo() }
           </div>
