@@ -10,10 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170718063129) do
+ActiveRecord::Schema.define(version: 20170719191252) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "projects", force: :cascade do |t|
+    t.string   "title",        null: false
+    t.string   "image_url",    null: false
+    t.text     "description",  null: false
+    t.text     "tagline",      null: false
+    t.date     "end_date",     null: false
+    t.integer  "funding_goal", null: false
+    t.integer  "creator_id",   null: false
+    t.integer  "category_id",  null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["creator_id"], name: "index_projects_on_creator_id", using: :btree
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",           null: false
