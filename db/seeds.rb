@@ -8,6 +8,14 @@
 
 Project.delete_all
 
+User.delete_all
+
+User.create!(
+  username: "BobbyTables",
+  password: "password",
+  email: "xkcd@xkcd.com"
+)
+
 Project.create!(
   title: "Paper Mache Volcano",
   image_url: "website",
@@ -43,5 +51,40 @@ Project.create!(
   end_date: Date.new(2030, 7, 5),
   funding_goal: 100,
   creator_id: 2,
-  category_id: 3,
+  category_id: 1,
+)
+
+Project.create!(
+  title: "Does the Weather Really Affect Mood?",
+  image_url: "website",
+  description: "Does weather have any effect on mood?
+  Are people more likely to be dissatisfied or melancholy on a rainy,
+  overcast day? Are people more likely to be happy on a sunny day?
+  Is one gender or age group more likely to be influenced by the weather?",
+  tagline: "It has long been believed that weather has influence over
+  people's mood and behavior.",
+  end_date: Date.new(2020, 7, 5),
+  funding_goal: 200,
+  creator_id: 3,
+  category_id: 1,
+)
+
+
+Project.create!(
+  title: "Build a Knife",
+  image_url: "website",
+  description: "Now you need to decide how to attach the handle to the
+  blade. There are three common methods of doing this: a full tang, a
+  partial tang, or a through-tang. A full tang has the same profile as
+  the handle of the knife, and the meat of the handle is formed by two
+  slabs of wood (scales) to either side of the tang; most good knives
+  are made this way. The knife I'm making here is a full tang knife. A
+  partial tang is the most inconspicuous of the three and, in my view,
+  the hardese",
+  tagline: "knife making is a slow, delicate, painstaking,
+  multi-faceted, sometimes frustrating process",
+  end_date: Date.new(2020, 7, 5),
+  funding_goal: 200,
+  creator_id: 3,
+  category_id: 2,
 )
