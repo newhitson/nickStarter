@@ -9,8 +9,7 @@ const mapStateToProps = ({ projects }) => {
     projects: selectAllProjects(projects)
   };
 };
-// selectAllProjects(projects) add this to give us an array
-// projects: selectAllProjects(projects)
+
 
 const mapDispatchToProps = dispatch => ({
   requestProjects: (catNumber) => dispatch(requestProjects(catNumber))

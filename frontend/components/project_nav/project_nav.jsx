@@ -11,7 +11,6 @@ class ProjectNav extends React.Component {
 
   render() {
     const { projects } = this.props;
-    console.log(this.props.projects);
     return (
       <div>
         <br/>
