@@ -12,6 +12,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 import GreetingContainer from './greeting/greeting_container';
 import SessionFormContainer from './session_form/session_form_container';
+import ProjectNavContainer from './project_nav/project_nav_container';
 
 
 const App = () => (
@@ -31,7 +32,7 @@ const App = () => (
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
     </switch>
-
+    <Route exact path='/' component={ ProjectNavContainer} />
   </div>
 );
 
