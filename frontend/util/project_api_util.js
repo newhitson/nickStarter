@@ -1,13 +1,13 @@
 export const fetchAllProjects = () => (
   $.ajax({
-    method: 'POST',
+    method: 'GET',
     url: '/api/projects',
   })
 );
 
 export const fetchSingleProject = (id) => {
   return $.ajax({
-    method: 'POST',
+    method: 'GET',
     url: `/api/projects/${id}`
   });
 };

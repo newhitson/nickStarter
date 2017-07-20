@@ -1,3 +1,5 @@
+import * as APIUtil from '../util/project_api_util';
+
 export const RECEIVE_ALL_PROJECTS    = 'RECEIVE_ALL_PROJECTS';
 export const RECEIVE_SINGLE_PROJECT = 'RECEIVE_SINGLE_PROJECT';
 
@@ -12,3 +14,18 @@ export const receiveSingleProject = project => ({
   type: RECEIVE_SINGLE_PROJECT,
   project
 });
+
+
+export const fetchProjects = filters => dispatch => (
+  APIUtil.fetchProjects(filters).then(projects => (
+    dispatch(receiveAllProjects(projects))
+  ))
+);
+
+export const requestSingleProject = id => dispatch => (
+  APIUtil.fetchSingleProject(id).then(project => (
+    dispatch(receiveSingleProject(project))
+  ))
+);
+
+window.requestSingleProject = requestSingleProject;
