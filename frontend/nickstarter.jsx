@@ -7,6 +7,7 @@ import configureStore from './store/store';
 
 // TESTING START
 import { login, signup, logout} from './actions/session_actions';
+import { receiveAllProjects, receiveSingleProject} from './actions/projects_actions';
 // TESTING END
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -17,8 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     delete window.currentUser;
   } else {
     store = configureStore();
-    console.log('here');
-    console.log(store);
   }
 
   // TESTING START
@@ -27,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.login = login;
   window.signup = signup;
   window.logout = logout;
+  window.receiveAllProjects = receiveAllProjects;
+  window.receiveSingleProject = receiveSingleProject;
   // TESTING END
 
   const root = document.getElementById('root');

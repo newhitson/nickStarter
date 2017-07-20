@@ -2,14 +2,13 @@
 import { combineReducers } from 'redux';
 
 import SessionReducer from './session_reducer';
-import ProjectsReducer from './session_reducer';
+import ProjectsReducer from './projects_reducer';
 
 
 
 const RootReducer = combineReducers({
-  session: SessionReducer,
-  projects: ProjectsReducer
-
+  projects: ProjectsReducer,
+  session: SessionReducer
 });
 
 export default RootReducer;
