@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom';
 const sessionLinks = (clearErrors) => (
   <nav className="login-signup">
     <div className="auth_box">
-    <Link to="/login"
+    <Link className="link_box"
+          to="/login"
           onClick={clearErrors}>Login</Link>
     </div>
     <div className="auth_box">
-    <Link to="/signup"
+    <Link className="link_box"
+          to="/signup"
           onClick={clearErrors}>Sign up!</Link>
     </div>
   </nav>

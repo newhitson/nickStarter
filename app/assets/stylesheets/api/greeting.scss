@@ -12,6 +12,12 @@
     font-size: 12px;
 }
 
+.link_box{
+  height: 64.5px;
+  display: flex;
+  align-items: center;
+}
+
 .sign_up_button:hover{
   cursor: pointer;
 }

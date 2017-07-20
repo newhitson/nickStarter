@@ -16,7 +16,7 @@ export const receiveSingleProject = project => ({
 });
 
 
-export const fetchProjects = filters => dispatch => (
+export const requestProjects = filters => dispatch => (
   APIUtil.fetchProjects(filters).then(projects => (
     dispatch(receiveAllProjects(projects))
   ))
@@ -27,5 +27,3 @@ export const requestSingleProject = id => dispatch => (
     dispatch(receiveSingleProject(project))
   ))
 );
-
-window.requestSingleProject = requestSingleProject;

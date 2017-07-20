@@ -1,7 +1,11 @@
 class Api::ProjectsController < ApplicationController
   #before_action :require_logged_in, only: [:create]
   def index
-    @projects = Project.all
+    if params[:category]
+      @projects = Project.where(category_id: params[:category])
+    else
+      @projects = Project.all
+  end
     render :index
   end
 
