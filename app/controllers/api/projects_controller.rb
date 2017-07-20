@@ -1,17 +1,17 @@
 class Api::ProjectsController < ApplicationController
   #before_action :require_logged_in, only: [:create]
   def index
-    @projects = Projects.all
-    render "api/projects/index"
+    @projects = Project.all
+    render :index
   end
 
   def show
-    @project = Projects.find(params[:id])
+    @project = Project.find(params[:id])
   end
 
   def create
     @project = Project.create!(project_params)
-    render :index
+    render :show
   end
 
   def update

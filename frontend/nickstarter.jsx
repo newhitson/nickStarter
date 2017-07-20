@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     delete window.currentUser;
   } else {
     store = configureStore();
+    console.log('here');
+    console.log(store);
   }
 
   // TESTING START

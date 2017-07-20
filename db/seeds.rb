@@ -9,7 +9,6 @@
 Project.delete_all
 
 Project.create!(
-
   title: "Paper Mache Volcano",
   image_url: "website",
   description: "When you add vinegar to bicarbonate of soda a chemical
@@ -26,9 +25,23 @@ Project.create!(
   below!",
   tagline: "A classic craft for kids, this paper mache volcano is an
   excellent science experiment too!",
-  end_date: Date.new(2100,7,5)
-#  funding_goal :integer          not null
-#  creator_id   :integer          not null
-#  category_id  :integer          not null
-
+  end_date: Date.new(2100, 7, 5),
+  funding_goal: 50,
+  creator_id: 1,
+  category_id: 1,
+)
+Project.create!(
+  title: "Flying Potatoes",
+  image_url: "website",
+  description: "The potato gun beautifully illustrates Boyle’s Law,
+  which states that pressure and volume are inversely proportional. In
+  other words, as you decrease the volume of the air trapped in between
+  the two pieces of potato, the pressure exerted by the air increases.
+  This increase in pressure eventually forces the potato at the top end
+  to exit the tube with great pizzazz!",
+  tagline: "Nothing's more fun than a potato gun.",
+  end_date: Date.new(2030, 7, 5),
+  funding_goal: 100,
+  creator_id: 2,
+  category_id: 3,
 )
