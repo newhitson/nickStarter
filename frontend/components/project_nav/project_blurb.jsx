@@ -15,8 +15,6 @@ const ProjectBlurb = ({ project }) => (
       <div className="project_blurb_creator_box">
         <span className="project_blurb_creator_text" >by:{project.creator_id}</span>
       </div>
-      <span> { project.id } </span>
-      <span> { project.title } </span>
   </div>
 );
 

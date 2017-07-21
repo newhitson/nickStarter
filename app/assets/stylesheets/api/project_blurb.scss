@@ -2,8 +2,6 @@
   height: 10%;
   color: #A9A9A9;
   display:flex;
-  border: solid;
-  border-width: 1px;
   align-items: center;
 }
 
@@ -14,8 +12,6 @@
 .project_blurb_title_box{
   height: 10%;
   display:flex;
-  border: solid;
-  border-width: 1px;
   align-items: center;
 }
 
@@ -25,9 +21,7 @@
 
 .project_blurb_creator_box{
   height: 10%;
-  display:flex;
-  border: solid;
-  border-width: 1px;
+  display:flex;;
   align-items: center;
 }
 
@@ -43,8 +37,6 @@
 
 }
 .nav_project_blurb{
-  border: solid;
-  border-width: 1px;
   margin: 0 40px 0 10px;
   width: 45%;
   height: 600px;
