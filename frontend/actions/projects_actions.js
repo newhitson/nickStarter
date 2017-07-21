@@ -2,6 +2,7 @@ import * as APIUtil from '../util/project_api_util';
 
 export const RECEIVE_ALL_PROJECTS    = 'RECEIVE_ALL_PROJECTS';
 export const RECEIVE_SINGLE_PROJECT = 'RECEIVE_SINGLE_PROJECT';
+export const RECEIVE_PROJECT_ERRORS = 'RECEIVE_PROJECT_ERRORS';
 
 
 
@@ -15,11 +16,27 @@ export const receiveSingleProject = project => ({
   project
 });
 
+export const receiveProjectErrors = errors => {
+  debugger;
+  return ({
+  type: RECEIVE_PROJECT_ERRORS,
+  errors
+  });
+};
+
+//
+// export const receiveProjectErrors = errors => ({
+//   type: RECEIVE_PROJECT_ERRORS,
+//   errors
+// });
+
 export const createProject = project => dispatch => (
-  APIUtil.createProject(project).then(newProject => (
-    dispatch(receiveSingleProject(newProject))
-  ))
+  APIUtil.createProject(project).then(newProject => {
+    dispatch(receiveSingleProject(project));
+    return project;
+  }).fail(err => dispatch(receiveProjectErrors(err.responseJSON)))
 );
+
 //add dispatch errors
 
 export const requestProjects = filters => dispatch => (

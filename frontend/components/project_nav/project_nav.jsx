@@ -10,6 +10,8 @@ class ProjectNav extends React.Component {
 
 
   render() {
+    console.log("here");
+    console.log(this.props);
     const { projects } = this.props;
     return (
       <section>

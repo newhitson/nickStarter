@@ -14,8 +14,15 @@ class Api::ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.create!(project_params)
-    render :show
+    # @project = Project.create!(project_params)
+    # render :show
+    @project = Project.new(project_params)
+
+    if @project.save
+      render :show
+    else
+      render json: @project.errors.full_messages, status: 422
+    end
   end
 
   def update

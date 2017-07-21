@@ -15,8 +15,8 @@ class ProjectPage extends React.Component {
 
   render() {
     const { projects } = this.props;
-
-      if (projects.id){
+      if (projects.project){
+        const project = projects.project;
         return (
       <div>
         <br/>
@@ -30,7 +30,7 @@ class ProjectPage extends React.Component {
         <br/>
         <br/>
         <br/>
-          <h1>{projects.title}</h1>
+          <h1>{project.title}</h1>
         </div>
     );} else {
       return (<h1>loading</h1>);
