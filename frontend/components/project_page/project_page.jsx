@@ -6,14 +6,12 @@ class ProjectPage extends React.Component {
   componentDidMount() {
    this.props.requestSingleProject(this.props.match.params.projectId);
    console.log(this.props);
-
   }
 
 
   render() {
     const { projects } = this.props;
-      console.log('here');
-      console.log(projects.id);
+
       if (projects.id){
         return (
       <div>
