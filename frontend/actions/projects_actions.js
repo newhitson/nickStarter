@@ -15,6 +15,12 @@ export const receiveSingleProject = project => ({
   project
 });
 
+export const createProject = project => dispatch => (
+  APIUtil.createProject(project).then(newProject => (
+    dispatch(receiveSingleProject(newProject))
+  ))
+);
+//add dispatch errors
 
 export const requestProjects = filters => dispatch => (
   APIUtil.fetchProjects(filters).then(projects => (
