@@ -4,8 +4,9 @@ import { createProject } from '../../actions/projects_actions';
 import ProjectForm from './project_form';
 
 
-const mapStateToProps = ({ session }) => {
+const mapStateToProps = ({ projects, session }) => {
   return {
+    errors: projects.errors,
     session
   };
 };

@@ -23,6 +23,18 @@ class ProjectForm extends React.Component {
     });
   }
 
+  renderErrors() {
+    return(
+      <ul className="project_errors">
+        {this.props.errors.map((error, i) => (
+          <li className="project_errors" key={`error-${i}`}>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const project = this.state;
@@ -30,13 +42,17 @@ class ProjectForm extends React.Component {
   }
 
   render() {
-    console.log(this.props);
-    console.log(this.state);
     return (
       <div className="project-form-container">
+        <br/>
+          <br/>
+            <br/>
+              <br/>
+                <br/>
+                  <br/>
         <form onSubmit={this.handleSubmit} className="project-form-box">
           <br/>
-          // errors
+          {this.renderErrors()}
           <div className="login-form">
             <br/>
             <label>

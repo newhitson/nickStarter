@@ -26,7 +26,6 @@ const ProjectsReducer = (state = defaultState, action) => {
         projects
       });
     case RECEIVE_PROJECT_ERRORS:
-    debugger;
       const errors = action.errors;
       return merge({}, defaultState,{
         errors

@@ -14,18 +14,10 @@ export const fetchSingleProject = (id) => {
 };
 
 export const createProject = (project) => {
+  debugger;
   return $.ajax({
     method: 'POST',
     url: '/api/projects',
-    data: {project}
+    data: project
   });
 };
-
-//
-// $.ajax({
-//     method: 'POST',
-//     url: '/api/projects',
-//     data: {project:{title:"eatbugs",image_url:'website',
-//     description:'eat them all', tagline:'yum', end_date:new Date(),
-//      funding_goal:1, creator_id:1, category_id:5}}
-//   })

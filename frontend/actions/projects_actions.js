@@ -17,7 +17,6 @@ export const receiveSingleProject = project => ({
 });
 
 export const receiveProjectErrors = errors => {
-  debugger;
   return ({
   type: RECEIVE_PROJECT_ERRORS,
   errors
