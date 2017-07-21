@@ -12,7 +12,7 @@ class ProjectNav extends React.Component {
   render() {
     const { projects } = this.props;
     return (
-      <div>
+      <section>
         <br/>
         <br/>
         <br/>
@@ -24,11 +24,27 @@ class ProjectNav extends React.Component {
         <br/>
         <br/>
         <br/>
-          <ul>
-            {projects.map(pro => <ProjectBlurb key={pro.id}
-                                                project={pro} />)}
-          </ul>
-        </div>
+          <div className="nav_project_container">
+            <div className="nav_project_nav">
+              <h1>reccomened for you</h1>
+
+                <div className="project_nav_container" >
+                  {projects.map(pro => <ProjectBlurb key={pro.id}
+                                                      project={pro} />)}
+                </div>
+            </div>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+
+    </section>
+
+
+
     );
   }
 }
