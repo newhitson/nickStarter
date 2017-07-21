@@ -12,8 +12,10 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 import GreetingContainer from './greeting/greeting_container';
 import SessionFormContainer from './session_form/session_form_container';
+import ProjectFormContainer from './project_form/project_form_container';
 import ProjectNavContainer from './project_nav/project_nav_container';
-import ProjectPage from './project_page/project_page_container';
+import ProjectPageContainer from './project_page/project_page_container';
+
 
 
 const App = () => (
@@ -34,7 +36,9 @@ const App = () => (
       <AuthRoute path="/signup" component={SessionFormContainer} />
     </switch>
     <Route exact path='/' component={ ProjectNavContainer} />
-    <Route exact path='/project/:projectId' component={ ProjectPage} />
+    <Route exact path='/new' component={ ProjectFormContainer} />
+    <Route exact path='/project/:projectId' component={ ProjectPageContainer} />
+
   </div>
 );
 

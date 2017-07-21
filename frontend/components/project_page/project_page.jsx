@@ -5,9 +5,13 @@ class ProjectPage extends React.Component {
 
   componentDidMount() {
    this.props.requestSingleProject(this.props.match.params.projectId);
-   console.log(this.props);
   }
 
+  componentWillReceiveProps(newProps){
+    if (this.props.match.params.projectId !== newProps.match.params.projectId ){
+      this.props.requestSingleProject(this.props.match.params.projectId);
+    }
+  }
 
   render() {
     const { projects } = this.props;

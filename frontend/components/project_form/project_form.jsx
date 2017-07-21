@@ -6,13 +6,13 @@ class ProjectForm extends React.Component {
     super(props);
     this.state = {
       title: '',
-      image_url: '',
+      image_url: 'url',
       description: '',
       tagline: '',
       end_date: '',
-      funding_goal: '',
-      creator_id: '',
-      category_id: ''
+      funding_goal: 6,
+      creator_id: this.props.session.currentUser.id,
+      category_id: 5
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -30,6 +30,8 @@ class ProjectForm extends React.Component {
   }
 
   render() {
+    console.log(this.props);
+    console.log(this.state);
     return (
       <div className="project-form-container">
         <form onSubmit={this.handleSubmit} className="project-form-box">
@@ -64,7 +66,7 @@ class ProjectForm extends React.Component {
                 />
               </label>
             <br/>
-              <label>
+              <label>end_date
                 <input type="date"
                   placeholder="end_date"
                   value={this.state.end_date}
