@@ -10,7 +10,7 @@ class ProjectForm extends React.Component {
       description: '',
       tagline: '',
       end_date: '',
-      funding_goal: 6,
+      funding_goal: 0,
       creator_id: this.props.session.currentUser.id,
       category_id: 5
     };
@@ -99,6 +99,16 @@ class ProjectForm extends React.Component {
                     className="project-input"
                   />
                 </label>
+              <br/>
+                <select value={this.state.category_id} onChange={this.update('category_id')} >
+                  <option value="1">Art</option>
+                  <option value="2">Comics</option>
+                  <option value="3">Design</option>
+                  <option value="4">Food</option>
+                  <option value="5">Games</option>
+                  <option value="6">Music</option>
+                  <option value="7">Technology</option>
+                </select>
             <input className="session_submit_button"
                    type="submit"
                    value="Submit" />
