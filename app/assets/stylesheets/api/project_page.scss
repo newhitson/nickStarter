@@ -1,0 +1,77 @@
+.project_page_container{
+  border-style: solid;
+  border-width: 1px;
+  height: 1000px;
+}
+
+.project_header{
+  border-style: solid;
+  border-width: 1px;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+}
+.project_header_creator_box{
+  border-style: solid;
+  border-width: 1px;
+  width: 20%;
+  height: 300px;
+  border-color: #0000ff;
+}
+
+.project_header_project_desciption_box{
+  border-style: solid;
+  border-width: 1px;
+  width: 80%;
+  height: 300px;
+  border-color: #0000ff;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.project_header_project_title{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #32CD32;
+  height: 180px;
+}
+
+.project_header_project_tag_line{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #32CD32;
+  height: 130px;
+}
+
+.project_picture_conatiner{
+  border-style: solid;
+  border-width: 1px;
+  height:55%;
+  display: flex;
+  flex-direction: row;
+}
+
+.main_project_image{
+  border-style: solid;
+  border-width: 1px;
+}
+
+.main_project_image_image{
+  height: 100%;
+  width: 100%;
+}
+
+.project_funded_info{
+  border-style: solid;
+  border-width: 1px;
+  width: 475px;
+  height: 475px;
+}
+
+.project_rewards_container{
+  border-style: solid;
+  border-width: 1px;
+  height: 20%;
+  display: flex;
+}

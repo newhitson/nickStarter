@@ -5,7 +5,7 @@ import ProjectBlurb from './project_blurb';
 class ProjectNav extends React.Component {
 
   componentDidMount() {
-    this.props.requestProjects(1);
+    this.props.requestProjects(8);
   }
 
 

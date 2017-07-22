@@ -16,6 +16,19 @@ User.create!(
   email: "xkcd@xkcd.com"
 )
 
+User.create!(
+  username: "Jon Snow",
+  password: "password",
+  email: "thewall@nightwatch.com"
+)
+
+User.create!(
+  username: "gandalf",
+  password: "password",
+  email: "thering@lotr.com"
+)
+
+
 Project.create!(
   title: "Paper Mache Volcano",
   image_url: "website",
@@ -36,7 +49,7 @@ Project.create!(
   end_date: Date.new(2100, 7, 5),
   funding_goal: 50,
   creator_id: 1,
-  category_id: 1,
+  category_id: 8,
 )
 Project.create!(
   title: "Flying Potatoes",
@@ -51,7 +64,7 @@ Project.create!(
   end_date: Date.new(2030, 7, 5),
   funding_goal: 100,
   creator_id: 2,
-  category_id: 1,
+  category_id: 8,
 )
 
 Project.create!(
@@ -66,7 +79,7 @@ Project.create!(
   end_date: Date.new(2020, 7, 5),
   funding_goal: 200,
   creator_id: 3,
-  category_id: 1,
+  category_id: 8,
 )
 
 

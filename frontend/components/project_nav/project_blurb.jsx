@@ -13,7 +13,7 @@ const ProjectBlurb = ({ project }) => (
         <span className="project_blurb_title_text" >{project.title}</span>
       </div>
       <div className="project_blurb_creator_box">
-        <span className="project_blurb_creator_text" >by:{project.creator_id}</span>
+        <span className="project_blurb_creator_text" >by: {project.creator}</span>
       </div>
   </div>
 );
