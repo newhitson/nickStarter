@@ -52,14 +52,20 @@
   flex-direction: row;
 }
 
-.main_project_image{
+.main_project_image_container{
   border-style: solid;
   border-width: 1px;
+  width: 960px;
+  position: relative;
+  margin:0 auto;
+  line-height: 1.4em;
+
 }
 
-.main_project_image_image{
-  height: 100%;
+.main_project_image{
+  height: auto;
   width: 100%;
+  max-width: 1000px;
 }
 
 .project_funded_info{
