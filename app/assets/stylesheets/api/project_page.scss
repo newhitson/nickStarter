@@ -1,27 +1,44 @@
+.project_page_background{
+  background-color: #f5f5f5;
+}
 .project_page_container{
-  border-style: solid;
-  border-width: 1px;
-  height: 1000px;
+  height: 2250px;
 }
 
 .project_header{
-  border-style: solid;
-  border-width: 1px;
   height: 300px;
   display: flex;
   justify-content: flex-start;
 }
 .project_header_creator_box{
-  border-style: solid;
-  border-width: 1px;
   width: 20%;
   height: 300px;
   border-color: #0000ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.project_header_by_box{
+  display: flex;
+  justify-content: center;
+}
+
+.by{
+  margin-top: 10px;
+  margin-right: 5px;
+  color: #383838;
+  font-weight: 300;
+}
+.creator{
+  margin-top: 10px;
+  color: #202020;
+  font-weight: 500;
+}
+
+
 .project_header_project_desciption_box{
-  border-style: solid;
-  border-width: 1px;
   width: 80%;
   height: 300px;
   border-color: #0000ff;
@@ -31,30 +48,42 @@
 }
 
 .project_header_project_title{
-  border-style: solid;
-  border-width: 1px;
   border-color: #32CD32;
   height: 180px;
+  display: flex;
+  align-items: center;
+  color: #202020;
+  font-size: 300%;
+}
+.project_page_title{
+  margin-left: 20px;
 }
 
 .project_header_project_tag_line{
-  border-style: solid;
-  border-width: 1px;
   border-color: #32CD32;
   height: 130px;
 }
 
+.project_header_project_tag_line{
+  color: #7e7e7e;
+  display: flex;
+  align-items: center;
+}
+
+.project_page_tagline{
+  margin-left: 20px;
+  font-size: 150%;
+  font-weight: 100;
+}
+
 .project_picture_conatiner{
-  border-style: solid;
-  border-width: 1px;
-  height:55%;
+  height: 55%;
+  max-height: 600px;
   display: flex;
   flex-direction: row;
 }
 
 .main_project_image_container{
-  border-style: solid;
-  border-width: 1px;
   width: 960px;
   position: relative;
   margin:0 auto;
@@ -69,15 +98,46 @@
 }
 
 .project_funded_info{
-  border-style: solid;
-  border-width: 1px;
   width: 475px;
   height: 475px;
 }
 
-.project_rewards_container{
+.project_about_container{
+  height: 40%;
+  display: flex;
+  background-color: white;
   border-style: solid;
   border-width: 1px;
-  height: 20%;
+  border-color: #e7ecdf;
+}
+
+.project_page_description_container{
+  width: 65%;
+}
+.project_page_description_title{
+  height: 200px;
+  width: 100%;
   display: flex;
+  align-items: center;
+}
+.description_title{
+  margin-left: 100px;
+  color: #404040;
+  font-size: 170%;
+  font-weight: 300;
+}
+.project_description_box{
+  height:  690px;
+  width: 99%;
+}
+
+.project_description{
+  margin-left: 100px;
+  color: #404040;
+  font-size: 120%;
+  line-height: 150%;
+}
+
+.project_page_rewards_container{
+  width: 35%;
 }
