@@ -43,27 +43,45 @@ class ProjectForm extends React.Component {
 
   render() {
     return (
-      <div className="project-form-container">
-        <br/>
-          <br/>
-            <br/>
-              <br/>
-                <br/>
-                  <br/>
-        <form onSubmit={this.handleSubmit} className="project-form-box">
-          <br/>
-          {this.renderErrors()}
-          <div className="login-form">
-            <br/>
-            <label>
-              <input type="input"
-                placeholder="title"
-                value={this.state.title}
-                onChange={this.update('title')}
-                className="project-input"
-              />
-            </label>
-            <br/>
+      <div className="project_page_background">
+        <div className="project_form_container">
+          <header className="project_form_title">
+          </header>
+        <div className="project_form_input_container">
+            <form onSubmit={this.handleSubmit}
+              className="project_form_box">
+
+              {this.renderErrors()}
+              <div className="project_input_div">
+                <div className="project_input_title_div">
+                  <p>title</p>
+                </div>
+
+                <div className="project_input_description_div">
+                <label>
+
+                <input type="input"
+                  placeholder="title"
+                  value={this.state.title}
+                  onChange={this.update('title')}
+                  className="project-input"
+                />
+              </label>
+                <div className="project_input_description">
+                <p>Our search looks through words from your project title
+                  and blurb, so make them clear and descriptive of what
+                  you’re making. Your profile name will be searchable, too.
+
+                  These words will help people find your project, so
+                  choose them wisely! Your name will be searchable
+                  too.</p>
+                </div>
+              </div>
+            </div>
+            <div className="project_input_div">
+              <div className="project_input_title_div">
+                <p>description</p>
+              </div>
             <label>
               <input type="text"
                 placeholder="description"
@@ -72,8 +90,9 @@ class ProjectForm extends React.Component {
                 className="project-input"
               />
             </label>
-            <br/>
-              <label>
+            </div>
+            <div className="project_input_div">
+            <label>
                 <input type="text"
                   placeholder="tagline"
                   value={this.state.tagline}
@@ -81,8 +100,9 @@ class ProjectForm extends React.Component {
                   className="project-input"
                 />
               </label>
-            <br/>
-              <label>end_date
+            </div>
+            <div className="project_input_div">
+            <label>end_date
                 <input type="date"
                   placeholder="end_date"
                   value={this.state.end_date}
@@ -90,8 +110,9 @@ class ProjectForm extends React.Component {
                   className="project-input"
                 />
               </label>
-              <br/>
-                <label>
+            </div>
+            <div className="project_input_div">
+            <label>
                   <input type="number"
                     placeholder="funding_goal"
                     value={this.state.funding_goal}
@@ -99,8 +120,10 @@ class ProjectForm extends React.Component {
                     className="project-input"
                   />
                 </label>
-              <br/>
-                <select value={this.state.category_id} onChange={this.update('category_id')} >
+            </div>
+            <div className="project_input_div">
+            <select value={this.state.category_id}
+                    onChange={this.update('category_id')} >
                   <option value="1">Art</option>
                   <option value="2">Comics</option>
                   <option value="3">Design</option>
@@ -109,13 +132,18 @@ class ProjectForm extends React.Component {
                   <option value="6">Music</option>
                   <option value="7">Technology</option>
                 </select>
+            </div>
             <input className="session_submit_button"
                    type="submit"
                    value="Submit" />
-            <br/>
-          </div>
-        </form>
+            </form>
+        <div className="project_form_sidebar" >
+
+        </div>
+        </div>
       </div>
+      </div>
+
     );
   }
 }

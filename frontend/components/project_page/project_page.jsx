@@ -19,10 +19,6 @@ class ProjectPage extends React.Component {
         const project = projects.project;
         return (
       <div className="project_page_background">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
         <section className="project_page_container">
           <header className="project_header">
             <div className="project_header_creator_box">
