@@ -15,6 +15,7 @@ import SessionFormContainer from './session_form/session_form_container';
 import ProjectFormContainer from './project_form/project_form_container';
 import ProjectNavContainer from './project_nav/project_nav_container';
 import ProjectPageContainer from './project_page/project_page_container';
+import NavContainer from './nav/nav_container';
 
 
 
@@ -22,6 +23,9 @@ const App = () => (
   <div>
     <header>
       <nav className= "top_nav">
+        <nav className= "top_nav_left">
+          <NavContainer />
+        </nav>
         <nav className="top_nav_middle">
           <a href=""><img src="https://fontmeme.com/permalink/170718/0b45c2e790d7ac2f0d6e769ed432209a.png" alt="kickstarter-font" /></a>
           <a href=""><img src="https://fontmeme.com/permalink/170719/dc6be872d1ee5e4dba5598ccae1bd265.png" alt="kickstarter-font" /></a>
@@ -36,7 +40,7 @@ const App = () => (
       <AuthRoute path="/signup" component={SessionFormContainer} />
     </switch>
     <Route exact path='/' component={ ProjectNavContainer} />
-    <Route exact path='/new' component={ ProjectFormContainer} />
+    <ProtectedRoute path='/new' component={ ProjectFormContainer} />
     <Route exact path='/project/:projectId' component={ ProjectPageContainer} />
 
   </div>
