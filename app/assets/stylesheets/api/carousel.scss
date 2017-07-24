@@ -1,0 +1,91 @@
+.project-carousel-slide {
+  background-color: black;
+
+  img {
+    max-height: 720px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-bottom: 1px solid #e6e6e6;
+    opacity: 0.5;
+  }
+
+  h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+    width: 75%;
+
+    color: white;
+    font-size: 56px;
+    line-height: 56px;
+
+  }
+
+  h2 {
+    margin: 0px;
+    position: absolute;
+    left: 50%;
+    top: 47.5%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+
+    font-size: 25px;
+    color: white;
+
+  }
+
+  button {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 158px;
+    height: 56px;
+    background-color: #25CB68;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #ffffff;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #05AF3C;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.featured {
+  min-height: 615px;
+}
+
+#leftButton, #rightButton {
+  width: 30px;
+  height: 75px;
+  transition: all 0.15s ease-in-out;
+}
+
+#leftButton {
+  margin-left: 20px;
+}
+
+#rightButton {
+  margin-right: 20px;
+}
+
+#leftButton:hover, #rightButton:hover {
+  transition: all 0.15s ease-in-out;
+  opacity: 0.5;
+  cursor: pointer;
+}

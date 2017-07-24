@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import ProjectBlurb from './project_blurb';
+import ProjectCarousel from './project_carousel';
 
 class ProjectNav extends React.Component {
 
@@ -19,13 +20,7 @@ class ProjectNav extends React.Component {
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <ProjectCarousel />
           <div className="nav_project_container">
             <div className="nav_project_nav">
               <h1 className="nav_project_container_title">
