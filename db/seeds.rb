@@ -63,7 +63,7 @@ Project.create!(
   tagline: "Nothing's more fun than a potato gun.",
   end_date: Date.new(2030, 7, 5),
   funding_goal: 100,
-  creator_id: 2,
+  creator_id: 4,
   category_id: 8,
 )
 
@@ -78,7 +78,53 @@ Project.create!(
   people's mood and behavior.",
   end_date: Date.new(2020, 7, 5),
   funding_goal: 200,
-  creator_id: 3,
+  creator_id: 4,
+  category_id: 8,
+)
+
+Project.create!(
+  title: "Does the Weather Really Affect Mood?",
+  image_url: "website",
+  description: "Does weather have any effect on mood?
+  Are people more likely to be dissatisfied or melancholy on a rainy,
+  overcast day? Are people more likely to be happy on a sunny day?
+  Is one gender or age group more likely to be influenced by the weather?",
+  tagline: "It has long been believed that weather has influence over
+  people's mood and behavior.",
+  end_date: Date.new(2020, 7, 5),
+  funding_goal: 200,
+  creator_id: 5,
+  category_id: 8,
+)
+
+Project.create!(
+  title: "Does the Weather Really Affect Mood?",
+  image_url: "website",
+  description: "Does weather have any effect on mood?
+  Are people more likely to be dissatisfied or melancholy on a rainy,
+  overcast day? Are people more likely to be happy on a sunny day?
+  Is one gender or age group more likely to be influenced by the weather?",
+  tagline: "It has long been believed that weather has influence over
+  people's mood and behavior.",
+  end_date: Date.new(2020, 7, 5),
+  funding_goal: 200,
+  creator_id: 5,
+  category_id: 8,
+)
+
+
+Project.create!(
+  title: "Does the Weather Really Affect Mood?",
+  image_url: "website",
+  description: "Does weather have any effect on mood?
+  Are people more likely to be dissatisfied or melancholy on a rainy,
+  overcast day? Are people more likely to be happy on a sunny day?
+  Is one gender or age group more likely to be influenced by the weather?",
+  tagline: "It has long been believed that weather has influence over
+  people's mood and behavior.",
+  end_date: Date.new(2020, 7, 5),
+  funding_goal: 200,
+  creator_id: 5,
   category_id: 8,
 )
 
@@ -98,6 +144,6 @@ Project.create!(
   multi-faceted, sometimes frustrating process",
   end_date: Date.new(2020, 7, 5),
   funding_goal: 200,
-  creator_id: 3,
+  creator_id: 5,
   category_id: 2,
 )

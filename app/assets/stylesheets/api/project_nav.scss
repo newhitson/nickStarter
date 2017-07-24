@@ -9,10 +9,18 @@
   margin-bottom: 5px;
 
 }
+
+.nav_project_container_title{
+  font-size: 30px;
+  font-weight: 300; 
+  margin-left: 10px;
+  color: #404040;
+
+}
 .project_nav_container{
   display: flex;
   margin-top: 90px;
   align-self: center;
-  justify-content: center;
   flex-flow: row wrap;
+  justify-content:space-around;
 }

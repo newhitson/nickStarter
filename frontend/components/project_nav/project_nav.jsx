@@ -28,7 +28,8 @@ class ProjectNav extends React.Component {
         <br/>
           <div className="nav_project_container">
             <div className="nav_project_nav">
-              <h1>reccomened for you</h1>
+              <h1 className="nav_project_container_title">
+                Recommended for you</h1>
 
                 <div className="project_nav_container" >
                   {projects.map(pro => <ProjectBlurb key={pro.id}
