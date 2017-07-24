@@ -15,6 +15,9 @@ const ProjectBlurb = ({ project }) => (
       <div className="project_blurb_creator_box">
         <span className="project_blurb_creator_text" >by: {project.creator}</span>
       </div>
+      <div className="project_blurb_funded_box">
+        <span className="project_blurb_funded_text" >${project.funded} pledged</span>
+      </div>
   </div>
 );
 
