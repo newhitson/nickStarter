@@ -1,26 +1,41 @@
 .project_form_container{
-  border-style: solid;
-  border-width: 1px;
   height: 2250px;
   margin-top: 100px;
   width: 1170px;
 }
 .project_form_title{
   height: 260px;
-  border-style: solid;
-  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project_form_title_title{
+  display: flex;
+  justify-content: center;
+  height: 130px;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 550;
+  color: #282828;
+
+}
+
+.project_form_title_subtitle{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 130px;
+  font-size: 25px;
+  color: #585858;
 }
 
 .project_form_input_container{
-  border-style: solid;
-  border-width: 1px;
   display: flex;
   justify-content: center;
   background-color: white;
 }
 .project_form_box{
-  border-style: solid;
-  border-width: 1px;
   width: 850px;
   display: flex;
   flex-direction: column;
@@ -29,36 +44,67 @@
 }
 
 .project_input_div{
-  background-color: #EEF2FE;
+  background-color: #f5f3fc;
+  border-radius: 15px;
   width: 95%;
-  margin: 10px;
   display: flex;
+  margin: 20px 10px 10px 10px;
 }
 
 .project_input_title_div{
   width: 750px;
-  border-style: solid;
-  border-width: 1px;
-
 }
+
+.project_input_title{
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
 .project-input{
   width: 96%;
   padding: 12px 20px;
-  margin: 12px 5px 10px 15px;
+  margin: 12px 5px 10px ;
   border: 1px solid #ccc;
   border-radius: 7px;
   box-sizing: border-box;
 }
 
 .project_input_description_div{
-  border-style: solid;
-  border-width: 1px;
+
 }
 
 .project_input_description{
   margin: 8px;
+  width: 555px;
+  margin-bottom: 15px;
 }
 
+select#soflow {
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: inherit;
+   margin: 20px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 500px;
+}
+
+.category_id_input{
+
+}
 
 .project_form_sidebar{
   border-style: solid;
