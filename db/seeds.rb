@@ -46,7 +46,7 @@ Project.create!(
   below!",
   tagline: "A classic craft for kids, this paper mache volcano is an
   excellent science experiment too!",
-  end_date: Date.new(2100, 7, 5),
+  end_date: Date.new(2018, 7, 5),
   funding_goal: 50,
   creator_id: user1.id,
   category_id: 8,
@@ -62,7 +62,7 @@ Project.create!(
   This increase in pressure eventually forces the potato at the top end
   to exit the tube with great pizzazz!",
   tagline: "Nothing's more fun than a potato gun.",
-  end_date: Date.new(2030, 7, 5),
+  end_date: Date.new(2017, 10, 5),
   funding_goal: 100,
   creator_id: user2.id,
   category_id: 8,
@@ -78,7 +78,7 @@ Project.create!(
   Is one gender or age group more likely to be influenced by the weather?",
   tagline: "It has long been believed that weather has influence over
   people's mood and behavior.",
-  end_date: Date.new(2020, 7, 5),
+  end_date: Date.new(2017, 9, 6),
   funding_goal: 200,
   creator_id: user3.id,
   category_id: 8,
@@ -94,7 +94,7 @@ Project.create!(
   Is one gender or age group more likely to be influenced by the weather?",
   tagline: "It has long been believed that weather has influence over
   people's mood and behavior.",
-  end_date: Date.new(2020, 7, 5),
+  end_date: Date.new(2018, 1, 5),
   funding_goal: 200,
   creator_id: user1.id,
   category_id: 8,
@@ -110,7 +110,7 @@ Project.create!(
   Is one gender or age group more likely to be influenced by the weather?",
   tagline: "It has long been believed that weather has influence over
   people's mood and behavior.",
-  end_date: Date.new(2020, 7, 5),
+  end_date: Date.new(2017, 9, 3),
   funding_goal: 200,
   creator_id: user1.id,
   category_id: 8,
@@ -127,7 +127,7 @@ Project.create!(
   Is one gender or age group more likely to be influenced by the weather?",
   tagline: "It has long been believed that weather has influence over
   people's mood and behavior.",
-  end_date: Date.new(2020, 7, 5),
+  end_date: Date.new(2020, 11, 5),
   funding_goal: 200,
   creator_id: user1.id,
   category_id: 8,
@@ -148,7 +148,7 @@ Project.create!(
   the hardese",
   tagline: "knife making is a slow, delicate, painstaking,
   multi-faceted, sometimes frustrating process",
-  end_date: Date.new(2020, 7, 5),
+  end_date: Date.new(2017, 11, 8),
   funding_goal: 200,
   creator_id: user2.id,
   category_id: 2,
