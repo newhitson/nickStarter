@@ -6,7 +6,7 @@ class ProjectForm extends React.Component {
     super(props);
     this.state = {
       title: '',
-      image_url: 'url',
+      image_url: '',
       description: '',
       tagline: '',
       end_date: '',
@@ -15,6 +15,7 @@ class ProjectForm extends React.Component {
       category_id: 5
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.upload = this.upload.bind(this);
   }
 
   update(field) {
@@ -41,7 +42,19 @@ class ProjectForm extends React.Component {
     this.props.createProject({project});
   }
 
+  upload(e){
+    e.preventDefault();
+    cloudinary.openUploadWidget(
+      window.cloudinary_options,
+       function(error,images){
+         if(error === null){
+           this.setState({image_url: images[0].url});
+         }
+    }.bind(this));
+  }
+
   render() {
+    console.log(this.state);
     return (
       <div className="project_page_background">
         <div className="project_form_container">
@@ -216,12 +229,14 @@ class ProjectForm extends React.Component {
 
 
 
+
+
             <input className="session_submit_button"
                    type="submit"
                    value="Submit" />
             </form>
         <div className="project_form_sidebar" >
-
+    <button onClick={this.upload} >Upload Image</button>
         </div>
         </div>
       </div>
