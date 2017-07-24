@@ -12,7 +12,8 @@ class ProjectForm extends React.Component {
       end_date: '',
       funding_goal: 0,
       creator_id: this.props.session.currentUser.id,
-      category_id: 5
+      category_id: 5,
+      funded: 0
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.upload = this.upload.bind(this);

@@ -50,6 +50,7 @@ Project.create!(
   funding_goal: 50,
   creator_id: user1.id,
   category_id: 8,
+  funded: 25
 )
 Project.create!(
   title: "Flying Potatoes",
@@ -65,6 +66,7 @@ Project.create!(
   funding_goal: 100,
   creator_id: user2.id,
   category_id: 8,
+  funded: 75
 )
 
 Project.create!(
@@ -80,6 +82,7 @@ Project.create!(
   funding_goal: 200,
   creator_id: user3.id,
   category_id: 8,
+    funded: 175
 )
 
 Project.create!(
@@ -95,6 +98,7 @@ Project.create!(
   funding_goal: 200,
   creator_id: user1.id,
   category_id: 8,
+  funded: 10
 )
 
 Project.create!(
@@ -110,6 +114,7 @@ Project.create!(
   funding_goal: 200,
   creator_id: user1.id,
   category_id: 8,
+  funded: 160
 )
 
 
@@ -126,6 +131,7 @@ Project.create!(
   funding_goal: 200,
   creator_id: user1.id,
   category_id: 8,
+  funded: 180
 )
 
 
@@ -146,4 +152,5 @@ Project.create!(
   funding_goal: 200,
   creator_id: user2.id,
   category_id: 2,
+  funded: 75
 )
