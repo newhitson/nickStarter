@@ -31,7 +31,7 @@ User.create!(
 
 Project.create!(
   title: "Paper Mache Volcano",
-  image_url: "website",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
   description: "When you add vinegar to bicarbonate of soda a chemical
   reaction occurs – the result is 'carbonic acid'. This is an unstable
   substance – you can tell from all the fizzing! The mixture instantly
@@ -53,7 +53,7 @@ Project.create!(
 )
 Project.create!(
   title: "Flying Potatoes",
-  image_url: "website",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
   description: "The potato gun beautifully illustrates Boyle’s Law,
   which states that pressure and volume are inversely proportional. In
   other words, as you decrease the volume of the air trapped in between
@@ -69,7 +69,7 @@ Project.create!(
 
 Project.create!(
   title: "Does the Weather Really Affect Mood?",
-  image_url: "website",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
   description: "Does weather have any effect on mood?
   Are people more likely to be dissatisfied or melancholy on a rainy,
   overcast day? Are people more likely to be happy on a sunny day?
@@ -84,7 +84,7 @@ Project.create!(
 
 Project.create!(
   title: "Does the Weather Really Affect Mood?",
-  image_url: "website",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
   description: "Does weather have any effect on mood?
   Are people more likely to be dissatisfied or melancholy on a rainy,
   overcast day? Are people more likely to be happy on a sunny day?
@@ -99,7 +99,7 @@ Project.create!(
 
 Project.create!(
   title: "Does the Weather Really Affect Mood?",
-  image_url: "website",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
   description: "Does weather have any effect on mood?
   Are people more likely to be dissatisfied or melancholy on a rainy,
   overcast day? Are people more likely to be happy on a sunny day?
@@ -115,7 +115,7 @@ Project.create!(
 
 Project.create!(
   title: "Does the Weather Really Affect Mood?",
-  image_url: "website",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
   description: "Does weather have any effect on mood?
   Are people more likely to be dissatisfied or melancholy on a rainy,
   overcast day? Are people more likely to be happy on a sunny day?
@@ -131,7 +131,7 @@ Project.create!(
 
 Project.create!(
   title: "Build a Knife",
-  image_url: "website",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
   description: "Now you need to decide how to attach the handle to the
   blade. There are three common methods of doing this: a full tang, a
   partial tang, or a through-tang. A full tang has the same profile as
