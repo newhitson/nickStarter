@@ -1,26 +1,33 @@
+.frontpage{
+  display: flex;
+  flex-direction: column;
+  height: 2500px;
+}
+
 .nav_project_container{
   width: 90%;
   margin-left: 5%;
   height: 750px;
-
+  display: flex;
+  justify-content: center;
 }
+
 .nav_project_nav{
   height: 90px;
   margin-bottom: 5px;
-
 }
 
 .nav_project_container_title{
   font-size: 30px;
-  font-weight: 300; 
+  font-weight: 300;
   margin-left: 10px;
   color: #404040;
-
 }
+
 .project_nav_container{
   display: flex;
   margin-top: 90px;
-  align-self: center;
   flex-flow: row wrap;
   justify-content:space-around;
+  max-width: 1500px;
 }

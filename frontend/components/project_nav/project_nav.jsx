@@ -15,7 +15,7 @@ class ProjectNav extends React.Component {
     console.log(this.props);
     const { projects } = this.props;
     return (
-      <section>
+      <section className="frontpage">
         <br/>
         <br/>
         <br/>
@@ -25,7 +25,6 @@ class ProjectNav extends React.Component {
             <div className="nav_project_nav">
               <h1 className="nav_project_container_title">
                 Recommended for you</h1>
-
                 <div className="project_nav_container" >
                   {projects.map(pro => <ProjectBlurb key={pro.id}
                                                       project={pro} />)}
