@@ -40,7 +40,7 @@ class ProjectPage extends React.Component {
           <figure className="project_picture_conatiner">
             <figure className="main_project_image_container">
               <img className="main_project_image"
-                src="https://ksr-ugc.imgix.net/assets/016/537/903/bca7902e3232309d81454d5aab22eeee_original.jpg?crop=faces&w=1024&h=576&fit=crop&v=1495761944&auto=format&q=92&s=fafc3f77199e2058225691a7e04f7c2c"
+                src={`${project.image_url}`}
                 />
             </figure>
             <figure className="project_funded_info">

@@ -10,19 +10,19 @@ Project.delete_all
 
 User.delete_all
 
-User.create!(
+user1 = User.create!(
   username: "BobbyTables",
   password: "password",
   email: "xkcd@xkcd.com"
 )
 
-User.create!(
+user2 = User.create!(
   username: "Jon Snow",
   password: "password",
   email: "thewall@nightwatch.com"
 )
 
-User.create!(
+user3 = User.create!(
   username: "gandalf",
   password: "password",
   email: "thering@lotr.com"
@@ -48,7 +48,7 @@ Project.create!(
   excellent science experiment too!",
   end_date: Date.new(2100, 7, 5),
   funding_goal: 50,
-  creator_id: 1,
+  creator_id: user1.id,
   category_id: 8,
 )
 Project.create!(
@@ -63,7 +63,7 @@ Project.create!(
   tagline: "Nothing's more fun than a potato gun.",
   end_date: Date.new(2030, 7, 5),
   funding_goal: 100,
-  creator_id: 4,
+  creator_id: user2.id,
   category_id: 8,
 )
 
@@ -78,7 +78,7 @@ Project.create!(
   people's mood and behavior.",
   end_date: Date.new(2020, 7, 5),
   funding_goal: 200,
-  creator_id: 4,
+  creator_id: user3.id,
   category_id: 8,
 )
 
@@ -93,7 +93,7 @@ Project.create!(
   people's mood and behavior.",
   end_date: Date.new(2020, 7, 5),
   funding_goal: 200,
-  creator_id: 5,
+  creator_id: user1.id,
   category_id: 8,
 )
 
@@ -108,7 +108,7 @@ Project.create!(
   people's mood and behavior.",
   end_date: Date.new(2020, 7, 5),
   funding_goal: 200,
-  creator_id: 5,
+  creator_id: user1.id,
   category_id: 8,
 )
 
@@ -124,7 +124,7 @@ Project.create!(
   people's mood and behavior.",
   end_date: Date.new(2020, 7, 5),
   funding_goal: 200,
-  creator_id: 5,
+  creator_id: user1.id,
   category_id: 8,
 )
 
@@ -144,6 +144,6 @@ Project.create!(
   multi-faceted, sometimes frustrating process",
   end_date: Date.new(2020, 7, 5),
   funding_goal: 200,
-  creator_id: 5,
+  creator_id: user2.id,
   category_id: 2,
 )
