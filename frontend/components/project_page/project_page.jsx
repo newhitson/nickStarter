@@ -13,6 +13,19 @@ class ProjectPage extends React.Component {
     }
   }
 
+  timeleft(end) {
+
+    var myDate= end;
+    myDate=myDate.split("-");
+    var newDate=myDate[1]+"/"+myDate[0]+"/"+myDate[2];
+
+    var oneDay = 24*60*60*1000;
+    const firstDate = new Date(myDate[0],myDate[1]-1,myDate[2]);
+    const secondDate = new Date();
+    var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+    return (diffDays);
+  }
+
   render() {
     const { projects } = this.props;
       if (projects.project){
@@ -44,6 +57,24 @@ class ProjectPage extends React.Component {
                 />
             </figure>
             <figure className="project_funded_info">
+
+
+              <div className="nav_project_blurb">
+
+
+
+
+  
+              </div>
+
+
+
+
+
+
+
+
+
               <p>{project.funding_goal}</p>
             </figure>
           </figure>
