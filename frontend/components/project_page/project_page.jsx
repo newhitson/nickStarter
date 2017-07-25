@@ -79,8 +79,10 @@ class ProjectPage extends React.Component {
                   <span className="funded_box_title">{this.timeleft(project.end_date)} </span>
                   <span className="project_blurb_funded_text">days to go</span>
                 </div>
-
-
+                <br />
+                <input className="session_submit_button"
+                       type="submit"
+                       value="Back this project" />
 
 
 

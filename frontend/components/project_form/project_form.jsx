@@ -101,6 +101,28 @@ class ProjectForm extends React.Component {
                 </div>
             </div>
 
+            <div className="project_input_div">
+                <div className="project_input_title_div">
+                  <p className="project_input_title">Project image</p>
+                </div>
+                <div className="project_input_description_div">
+                <label>
+                  <input className="session_submit_button"
+                         type="submit"
+                         value="upload image"
+                          onClick={this.upload}
+                          />
+
+
+              </label>
+                <div className="project_input_description">
+                  <p>This is the first thing that people will see when
+                    they come across your project. Choose an image
+                    that’s crisp and text-free.</p>
+                </div>
+                </div>
+            </div>
+
 
 
             <div className="project_input_div">
@@ -237,7 +259,6 @@ class ProjectForm extends React.Component {
                    value="Submit" />
             </form>
         <div className="project_form_sidebar" >
-    <button onClick={this.upload} >Upload Image</button>
         </div>
         </div>
       </div>
