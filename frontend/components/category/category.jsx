@@ -17,16 +17,11 @@ class Category extends React.Component {
     const { projects } = this.props;
     return (
       <section className="frontpage">
+        <p className="Category_title">
+          Category</p>
           <div className="nav_project_container">
             <div className="nav_project_nav">
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <h1 className="nav_project_container_title">
-                Category</h1>
+
                 <div className="project_nav_container" >
                   {projects.map(pro => <ProjectBlurb key={pro.id}
                                                       project={pro} />)}
