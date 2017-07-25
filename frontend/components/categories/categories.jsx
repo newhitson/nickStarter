@@ -6,22 +6,15 @@ class Categories extends React.Component {
 
   render() {
     return (
-      <div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <ul>
-          <li><Link to={`/category/1`}>Art</Link></li>
-          <li><Link to={`/category/2`}>Comic</Link></li>
-          <li><Link to={`/category/3`}>Design</Link></li>
-          <li><Link to={`/category/4`}>Food</Link></li>
-          <li><Link to={`/category/5`}>Games</Link></li>
-          <li><Link to={`/category/6`}>Music</Link></li>
-          <li><Link to={`/category/7`}>Technology</Link></li>
+      <div className="categories">
+        <ul className="categories_ul">
+          <li className="category_li"><Link to={`/category/1`}>Art</Link></li>
+          <li className="category_li"><Link to={`/category/2`}>Comic</Link></li>
+          <li className="category_li"><Link to={`/category/3`}>Design</Link></li>
+          <li className="category_li"><Link to={`/category/4`}>Food</Link></li>
+          <li className="category_li"><Link to={`/category/5`}>Games</Link></li>
+          <li className="category_li"><Link to={`/category/6`}>Music</Link></li>
+          <li className="category_li"><Link to={`/category/7`}>Technology</Link></li>
         </ul>
       </div>
     );
