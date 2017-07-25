@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Line } from 'rc-progress';
 
 
 const timeleft = function(end) {
@@ -31,12 +32,22 @@ const ProjectBlurb = ({ project }) => (
       <div className="project_blurb_creator_box">
         <span className="project_blurb_creator_text" >by: {project.creator}</span>
       </div>
+      <div className="project_line_box">
+      <Line percent={`${project.funded/project.funding_goal * 100}`} strokeWidth="1" strokeColor="#2BDE73"
+        trailWidth="1" trailColor="#e6e6e6" />
+      </div>
       <div className="project_blurb_funded_box">
-        <span className="project_blurb_funded_text" >${project.funded} pledged</span>
+        <span className="project_blurb_funded_text"><span
+           className="dark_grey">${project.funded}</span>
+          pledged</span>
         <br/>
-        <span className="project_blurb_funded_text" >{project.funded/project.funding_goal * 100}% funded</span>
+        <span className="project_blurb_funded_text"><span
+           className="dark_grey">{project.funded/project.funding_goal * 100}%</span>
+         funded</span>
         <br/>
-        <span className="project_blurb_funded_text" > {timeleft(project.end_date)} days left </span>
+        <span className="project_blurb_funded_text"><span
+           className="dark_grey">{timeleft(project.end_date)}</span>
+          days left </span>
       </div>
   </div>
 );
