@@ -61,29 +61,29 @@ class ProjectPage extends React.Component {
 
 
               <div className="main_project_line_box">
+
+
               <Line percent={`${project.funded/project.funding_goal * 100}`} strokeWidth="1" strokeColor="#2BDE73"
                 trailWidth="1" trailColor="#e6e6e6" />
               </div>
-              <div className="project_blurb_funded_box">
-                <span className="project_blurb_funded_text"><span
-                   className="dark_grey">${project.funded}</span>
-                  pledged</span>
-                <br/>
-                <span className="project_blurb_funded_text"><span
-                   className="dark_grey">{project.funded/project.funding_goal * 100}%</span>
-                 funded</span>
-                <br/>
-                <span className="project_blurb_funded_text"><span
-                   className="dark_grey">{this.timeleft(project.end_date)}</span>
-                  days left </span>
-              </div>
+
+                <div className="project_blurb_funded_boxs">
+                  <span className="green_text">${project.funded}</span>
+                  <span className="project_blurb_funded_text">
+                    pledged of ${project.funding_goal} goal</span>
+
+                  <br/>
+                  <span className="funded_box_title">#</span>
+                  <span className="project_blurb_funded_text">backers</span>
+                  <br/>
+                  <span className="funded_box_title">{this.timeleft(project.end_date)} </span>
+                  <span className="project_blurb_funded_text">days to go</span>
+                </div>
 
 
 
 
 
-
-              <p>{project.funding_goal}</p>
             </figure>
           </figure>
           <figure className="project_about_container">
