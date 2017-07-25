@@ -83,7 +83,10 @@ class ProjectPage extends React.Component {
                 <input className="session_submit_button"
                        type="submit"
                        value="Back this project" />
-
+                <br />
+                <span className="project_blurb_funded_text">All or
+                  nothing. This project will only be funded if it
+                  reaches its goal</span>
 
 
             </figure>

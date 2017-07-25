@@ -135,7 +135,7 @@ class SessionForm extends React.Component {
             <br/>
             { this.includeEmail() }
             <br/>
-            <input className="session_submit_button"
+            <input className="session_submit_button2"
                    type="submit"
                    value="Submit" />
             <input onClick={this.handleGuestLogin}

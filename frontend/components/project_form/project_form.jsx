@@ -254,9 +254,11 @@ class ProjectForm extends React.Component {
 
 
 
-            <input className="session_submit_button"
-                   type="submit"
-                   value="Submit" />
+            <input
+                  className="session_submit_button"
+                  id="form_input_button"
+                  type="submit"
+                  value="Submit" />
             </form>
         <div className="project_form_sidebar" >
         </div>
