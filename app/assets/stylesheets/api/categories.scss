@@ -1,3 +1,10 @@
+.categories_header{
+  color: #2BDE73;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
 .categories{
   background-color: #f5f5f5;
   height: 800px;
@@ -17,4 +24,11 @@ padding-top: 125px;
 .category_li:hover{
   color: #2BDE73;
   transition-delay:.15s;
+}
+
+.categories_hr{
+  padding-top: 1px;
+    border-width: 0;
+    background-color: #2BDE73;
+    margin-bottom: 25px;
 }

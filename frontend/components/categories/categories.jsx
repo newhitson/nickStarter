@@ -7,7 +7,10 @@ class Categories extends React.Component {
   render() {
     return (
       <div className="categories">
+
         <ul className="categories_ul">
+          <p className="categories_header">Categories</p>
+            <hr className="categories_hr" />
           <li className="category_li"><Link to={`/category/1`}>Art</Link></li>
           <li className="category_li"><Link to={`/category/2`}>Comic</Link></li>
           <li className="category_li"><Link to={`/category/3`}>Design</Link></li>
@@ -16,6 +19,7 @@ class Categories extends React.Component {
           <li className="category_li"><Link to={`/category/6`}>Music</Link></li>
           <li className="category_li"><Link to={`/category/7`}>Technology</Link></li>
         </ul>
+
       </div>
     );
   }
