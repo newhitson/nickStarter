@@ -9,11 +9,18 @@ class LeftNav extends React.Component {
   render() {
     if (this.props.currentUser !== null) {
     return (
-      <div className="auth_box"
-           id="start_project">
-      <Link className="link_box"
-            to="/new">Start a project</Link>
-      </div>
+      <nav className="left_nav">
+        <div className="auth_box"
+             id="start_project">
+        <Link className="link_box"
+              to="/new">Start a project</Link>
+        </div>
+        <div className="auth_box"
+             id="start_project">
+        <Link className="link_box"
+              to="/categories">explore</Link>
+        </div>
+      </nav>
     );
   }}
 
