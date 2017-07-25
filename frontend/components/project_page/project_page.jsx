@@ -6,6 +6,7 @@ class ProjectPage extends React.Component {
 
   componentDidMount() {
    this.props.requestSingleProject(this.props.match.params.projectId);
+   window.scrollTo(0,0);
   }
 
   componentWillReceiveProps(newProps){
