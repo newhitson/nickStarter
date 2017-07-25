@@ -23,20 +23,14 @@ export const receiveProjectErrors = errors => {
   });
 };
 
-//
-// export const receiveProjectErrors = errors => ({
-//   type: RECEIVE_PROJECT_ERRORS,
-//   errors
-// });
 
 export const createProject = project => dispatch => (
   APIUtil.createProject(project).then(newProject => {
-    dispatch(receiveSingleProject(project));
-    return project;
+    dispatch(receiveSingleProject(newProject));
+    return newProject;
   }).fail(err => dispatch(receiveProjectErrors(err.responseJSON)))
 );
-
-//add dispatch errors
+// receiverSingleProject newProject?
 
 export const requestProjects = filters => dispatch => (
   APIUtil.fetchProjects(filters).then(projects => (

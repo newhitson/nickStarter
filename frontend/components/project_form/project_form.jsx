@@ -6,7 +6,7 @@ class ProjectForm extends React.Component {
     super(props);
     this.state = {
       title: '',
-      image_url: '',
+      image_url: 'http://picbash.com/images/missing_image.png',
       description: '',
       tagline: '',
       end_date: '',
@@ -40,7 +40,9 @@ class ProjectForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const project = this.state;
-    this.props.createProject({project});
+    this.props.createProject({project}).then(res=>
+    this.props.history.push(`/project/${res.id}`)
+    );
   }
 
   upload(e){
@@ -73,8 +75,6 @@ class ProjectForm extends React.Component {
         <div className="project_form_input_container">
             <form onSubmit={this.handleSubmit}
               className="project_form_box">
-
-              {this.renderErrors()}
 
 
             <div className="project_input_div">
@@ -112,15 +112,17 @@ class ProjectForm extends React.Component {
                          value="upload image"
                           onClick={this.upload}
                           />
-
-
               </label>
-                <div className="project_input_description">
+              <div className="project_input_picture_box">
+                <div className="project_input_description_picture_box">
                   <p>This is the first thing that people will see when
-                    they come across your project. Choose an image
+                    they come acrossyour project. Choose an image
                     that’s crisp and text-free.</p>
+
                 </div>
-                </div>
+                <img src={this.state.image_url} className="thumbNail" />
+              </div>
+              </div>
             </div>
 
 
@@ -211,7 +213,7 @@ class ProjectForm extends React.Component {
           <div className="project_input_description_div">
           <label>
 
-          <input type="input"
+          <input type="ril"
             value={this.state.funding_goal}
             onChange={this.update('funding_goal')}
             className="project-input"
@@ -219,7 +221,7 @@ class ProjectForm extends React.Component {
           />
         </label>
           <div className="project_input_description">
-            <p>Funding on Kickstarter is all-or-nothing. It’s okay to
+            <p>Funding on Nickstarter is all-or-nothing. It’s okay to
             raise more than your goal, but if your goal isn’t met, no
             money will be collected. Your goal should reflect the
             minimum amount of funds you need to complete your project
@@ -254,10 +256,10 @@ class ProjectForm extends React.Component {
 
 
 
-
+            {this.renderErrors()}
 
             <input
-                  className="session_submit_button"
+                  className="session_submit_button3"
                   id="form_input_button"
                   type="submit"
                   value="Submit" />

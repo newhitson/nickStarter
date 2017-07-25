@@ -112,3 +112,23 @@ select#soflow {
   width: 325px;
   height: 200px;
 }
+
+.thumbNail{
+  height: 15%;
+  width: 15%;
+  margin: 15px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.project_input_picture_box{
+  display: flex;
+  justify-content: right;
+  width: 555px;
+}
+
+.project_input_description_picture_box{
+  margin: 8px;
+  width: 300px;
+  margin-bottom: 15px;
+}

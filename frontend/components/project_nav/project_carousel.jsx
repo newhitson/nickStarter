@@ -3,7 +3,7 @@ import Carousel from "nuka-carousel";
 import Decorators from "./decorators";
 
 const ProjectCarousel = () => (
-  <Carousel wrapAround={true} autoplay={true} autoplayInterval={10000} decorators={Decorators}>
+  <Carousel wrapAround={true} autoplay={true} autoplayInterval={2000} decorators={Decorators}>
     <div className="project-carousel-slide">
       <h1>title</h1>
       <h2>subtitle</h2>

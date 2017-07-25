@@ -24,6 +24,8 @@ const App = () => (
     <header>
       <nav className= "top_nav">
         <nav className= "top_nav_left">
+          <Route path='/categories'/>
+          <Route path='/category/:categoryId'/>
           <NavContainer />
         </nav>
         <nav className="top_nav_middle">
