@@ -85,6 +85,7 @@
   max-height: 600px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .main_project_image_container{
@@ -93,19 +94,17 @@
   margin:0 auto;
   line-height: 1.4em;
 
+
 }
 
 .main_project_image{
   height: auto;
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
   max-height: 600px;
 }
 
-.project_funded_info{
-  width: 475px;
-  height: 475px;
-}
+
 
 .project_about_container{
   height: 40%;

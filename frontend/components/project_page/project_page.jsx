@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import { Line } from 'rc-progress';
 
 class ProjectPage extends React.Component {
 
@@ -14,7 +15,6 @@ class ProjectPage extends React.Component {
   }
 
   timeleft(end) {
-
     var myDate= end;
     myDate=myDate.split("-");
     var newDate=myDate[1]+"/"+myDate[0]+"/"+myDate[2];
@@ -59,16 +59,24 @@ class ProjectPage extends React.Component {
             <figure className="project_funded_info">
 
 
-              <div className="nav_project_blurb">
 
-
-
-
-  
+              <div className="main_project_line_box">
+              <Line percent={`${project.funded/project.funding_goal * 100}`} strokeWidth="1" strokeColor="#2BDE73"
+                trailWidth="1" trailColor="#e6e6e6" />
               </div>
-
-
-
+              <div className="project_blurb_funded_box">
+                <span className="project_blurb_funded_text"><span
+                   className="dark_grey">${project.funded}</span>
+                  pledged</span>
+                <br/>
+                <span className="project_blurb_funded_text"><span
+                   className="dark_grey">{project.funded/project.funding_goal * 100}%</span>
+                 funded</span>
+                <br/>
+                <span className="project_blurb_funded_text"><span
+                   className="dark_grey">{this.timeleft(project.end_date)}</span>
+                  days left </span>
+              </div>
 
 
 
