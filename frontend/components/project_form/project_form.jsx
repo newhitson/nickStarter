@@ -156,11 +156,13 @@ class ProjectForm extends React.Component {
             <div className="project_input_description_div">
             <label>
 
-            <input type="input"
+            <textarea
               value={this.state.description}
               onChange={this.update('description')}
               className="project-input"
-            />
+              rows="6"
+            >
+          </textarea>
           </label>
             <div className="project_input_description">
             <p>Use your project description to share more about what

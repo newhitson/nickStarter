@@ -14,13 +14,6 @@ class SessionForm extends React.Component {
     this.removeErrors = this.removeErrors.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
-    // if (nextProps.loggedIn) {
-    //   this.props.history.push('/');
-    // }
-    // luke says this isnt needed because of authroutes? removed on 7.19.17
-  }
-
   removeErrors(){
     this.props.clearErrors();
   }
