@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Categories from './categories';
+import Category from './category';
 
 import { selectAllProjects} from '../../reducers/selectors';
 import { requestProjects } from '../../actions/projects_actions';
@@ -18,4 +18,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Categories);
+)(Category);

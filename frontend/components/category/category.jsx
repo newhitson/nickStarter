@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import ProjectBlurb from './project_blurb';
-import ProjectCarousel from './project_carousel';
+import ProjectBlurb from '../project_nav/project_blurb';
 
-class ProjectNav extends React.Component {
+class Category extends React.Component {
 
   componentDidMount() {
-    this.props.requestProjects(8);
-
+    this.props.requestProjects(this.props.match.params.categoryId);
   }
 
 
@@ -19,11 +17,10 @@ class ProjectNav extends React.Component {
         <br/>
         <br/>
         <br/>
-        <ProjectCarousel />
           <div className="nav_project_container">
             <div className="nav_project_nav">
               <h1 className="nav_project_container_title">
-                Recommended for you</h1>
+                Category</h1>
                 <div className="project_nav_container" >
                   {projects.map(pro => <ProjectBlurb key={pro.id}
                                                       project={pro} />)}
@@ -45,4 +42,4 @@ class ProjectNav extends React.Component {
   }
 }
 
-export default ProjectNav;
+export default Category;

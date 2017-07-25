@@ -16,6 +16,8 @@ import ProjectFormContainer from './project_form/project_form_container';
 import ProjectNavContainer from './project_nav/project_nav_container';
 import ProjectPageContainer from './project_page/project_page_container';
 import NavContainer from './nav/nav_container';
+import CategoriesContainer from './categories/categories_container';
+import CategoryContainer from './category/category_container';
 
 
 
@@ -24,8 +26,6 @@ const App = () => (
     <header>
       <nav className= "top_nav">
         <nav className= "top_nav_left">
-          <Route path='/categories'/>
-          <Route path='/category/:categoryId'/>
           <NavContainer />
         </nav>
         <nav className="top_nav_middle">
@@ -44,6 +44,8 @@ const App = () => (
     <Route exact path='/' component={ ProjectNavContainer} />
     <ProtectedRoute path='/new' component={ ProjectFormContainer} />
     <Route exact path='/project/:projectId' component={ ProjectPageContainer} />
+    <Route exact path='/categories' component={CategoriesContainer} />
+    <Route exact path='/category/:categoryId' component={CategoryContainer}/>
 
   </div>
 );
