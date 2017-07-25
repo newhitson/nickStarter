@@ -32,8 +32,7 @@
   margin: 5px;
   margin-left: 20px;
   height: 60px;
-
-  border-width: 3px;
+  border: 3px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,5 +41,5 @@
 
 .auth_box:hover {
 
-    border-bottom: 3px solid #2bde73;
+    border-bottom: solid #2bde73;
 }

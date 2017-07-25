@@ -8,6 +8,10 @@ class Category extends React.Component {
     this.props.requestProjects(this.props.match.params.categoryId);
   }
 
+  componentWillUnmount(){
+    this.props.clearProjects;
+  }
+
 
   render() {
     const { projects } = this.props;
@@ -15,6 +19,12 @@ class Category extends React.Component {
       <section className="frontpage">
           <div className="nav_project_container">
             <div className="nav_project_nav">
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
               <h1 className="nav_project_container_title">
                 Category</h1>
                 <div className="project_nav_container" >

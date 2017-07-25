@@ -7,7 +7,6 @@ class ProjectNav extends React.Component {
 
   componentDidMount() {
     this.props.requestProjects(8);
-
   }
 
 

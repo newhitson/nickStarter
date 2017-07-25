@@ -3,7 +3,8 @@ import merge from 'lodash/merge';
 import {
   RECEIVE_ALL_PROJECTS,
   RECEIVE_SINGLE_PROJECT,
-  RECEIVE_PROJECT_ERRORS
+  RECEIVE_PROJECT_ERRORS,
+  CLEAR_PROJECTS
 } from '../actions/projects_actions';
 
 const defaultState = Object.freeze({
@@ -30,6 +31,8 @@ const ProjectsReducer = (state = defaultState, action) => {
       return merge({}, defaultState,{
         errors
       });
+    case CLEAR_PROJECTS:
+      return defaultState;
     default:
       return state;
   }

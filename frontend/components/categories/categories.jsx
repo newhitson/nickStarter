@@ -3,6 +3,9 @@ import { Link, withRouter } from 'react-router-dom';
 
 class Categories extends React.Component {
 
+  componentWillUnmount(){
+    this.props.clearProjects;
+  }
 
   render() {
     return (
