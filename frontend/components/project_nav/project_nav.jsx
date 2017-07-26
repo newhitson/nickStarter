@@ -14,10 +14,6 @@ class ProjectNav extends React.Component {
     const { projects } = this.props;
     return (
       <section className="frontpage">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
         <ProjectCarousel />
           <div className="nav_project_container">
             <div className="nav_project_nav">
@@ -29,12 +25,6 @@ class ProjectNav extends React.Component {
                 </div>
             </div>
           </div>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
 
     </section>
 

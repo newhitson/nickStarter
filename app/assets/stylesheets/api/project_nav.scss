@@ -2,19 +2,18 @@
   display: flex;
   flex-direction: column;
   height: 2500px;
+  align-content: center;
+  padding-top: 75px;
 }
 
-.nav_project_container{
-  width: 90%;
-  margin-left: 5%;
-  height: 750px;
-  display: flex;
-  justify-content: center;
-}
 
 .nav_project_nav{
   height: 90px;
   margin-bottom: 5px;
+  padding-top: 55px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .nav_project_container_title{
@@ -22,6 +21,7 @@
   font-weight: 300;
   margin-left: 10px;
   color: #404040;
+
 }
 
 .project_nav_container{
@@ -29,5 +29,6 @@
   margin-top: 90px;
   flex-flow: row wrap;
   justify-content:space-around;
-  max-width: 1500px;
+  max-width: 1400px;
+  align-self: center;
 }

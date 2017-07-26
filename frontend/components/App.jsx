@@ -46,7 +46,6 @@ const App = () => (
     <Route exact path='/project/:projectId' component={ ProjectPageContainer} />
     <Route exact path='/categories' component={CategoriesContainer} />
     <Route exact path='/category/:categoryId' component={CategoryContainer}/>
-
   </div>
 );
 
