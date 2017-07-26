@@ -16,7 +16,7 @@ const RewardsReducer = (state = defaultState, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_SINGLE_REWARD:
-      let rewards = action.rewards;
+      let reward = action.rewards;
       return merge({}, defaultState, {
         rewards
       });

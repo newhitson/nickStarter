@@ -28,3 +28,9 @@ export const createReward = reward => dispatch => (
     return newReward;
   }).fail(err => dispatch(receiveRewardErrors(err.responseJSON)))
 );
+
+export const requestRewards = filters => dispatch => (
+  APIUtil.fetchRewards(filters).then(rewards => (
+    dispatch(receiveAllRewards(rewards))
+  ))
+);
