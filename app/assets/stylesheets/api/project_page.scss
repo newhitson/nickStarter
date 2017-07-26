@@ -91,11 +91,12 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  max-width: 1450px;
 
 }
 
 .main_project_image_container{
-  width: 960px;
+  max-width: 960px;
   position: relative;
   margin:0 auto;
   line-height: 1.4em;
