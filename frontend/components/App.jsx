@@ -18,6 +18,7 @@ import ProjectPageContainer from './project_page/project_page_container';
 import NavContainer from './nav/nav_container';
 import CategoriesContainer from './categories/categories_container';
 import CategoryContainer from './category/category_container';
+import ProjectRewardContainer from './reward_form/reward_form_container';
 
 
 
@@ -43,6 +44,7 @@ const App = () => (
     </switch>
     <Route exact path='/' component={ ProjectNavContainer} />
     <ProtectedRoute path='/new' component={ ProjectFormContainer} />
+    <ProtectedRoute path='/rewards/:projectId'component={ ProjectRewardContainer} />
     <Route exact path='/project/:projectId' component={ ProjectPageContainer} />
     <Route exact path='/categories' component={CategoriesContainer} />
     <Route exact path='/category/:categoryId' component={CategoryContainer}/>

@@ -16,7 +16,7 @@ class Rewards extends React.Component {
     return (
       <section>
         <div>
-          {rewards.map(reward => <RewardBlurb reward={reward}/>)}
+          {rewards.map(reward => <RewardBlurb key={reward.id} reward={reward}/>)}
         </div>
     </section>
     );

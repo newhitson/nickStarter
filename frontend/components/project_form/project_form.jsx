@@ -41,7 +41,7 @@ class ProjectForm extends React.Component {
     e.preventDefault();
     const project = this.state;
     this.props.createProject({project}).then(res=>
-    this.props.history.push(`/project/${res.id}`)
+    this.props.history.push(`/rewards/${res.id}`)
     );
   }
 
@@ -57,7 +57,7 @@ class ProjectForm extends React.Component {
   }
 
   render() {
-    console.log(this.state);
+
     return (
       <div className="project_page_background">
         <div className="project_form_container">
@@ -213,7 +213,7 @@ class ProjectForm extends React.Component {
           <div className="project_input_description_div">
           <label>
 
-          <input type="ril"
+          <input
             value={this.state.funding_goal}
             onChange={this.update('funding_goal')}
             className="project-input"

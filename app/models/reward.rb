@@ -12,6 +12,8 @@
 #
 
 class Reward < ApplicationRecord
+  validates :title, :project_id, :description, :cost, presence: true
+
 
   # belongs_to :project
   # black magic
