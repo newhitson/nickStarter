@@ -1,1 +1,1 @@
-json.partial! "api/rewards/reward", project: @project
+json.partial! "api/rewards/reward", reward: @reward

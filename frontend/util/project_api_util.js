@@ -20,3 +20,5 @@ export const createProject = (project) => {
     data: project
   });
 };
+
+window.fetchProjects = fetchProjects;

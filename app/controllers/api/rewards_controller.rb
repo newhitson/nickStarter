@@ -1,8 +1,17 @@
 class Api::RewardsController < ApplicationController
+  def index
+    if params[:project_id]
+      @rewards = Reward.where(project_id: params[:project_id])
+                                #project_id?
+    else
+      @rewards = Reward.all
+    end
+    render :index
+  end
+
 
   def create
-    # @project = Project.create!(project_params)
-    # render :show
+
     @reward = Reward.new(reward_params)
 
     if @reward.save
