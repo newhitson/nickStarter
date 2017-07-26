@@ -2,11 +2,14 @@
   background-color: #f5f5f5;
   display: flex;
   justify-content: center;
+  width: 100%;
+
 
 }
 .project_page_container{
   height: 2250px;
   margin-top: 80px;
+    background-color: #f5f5f5;
 }
 
 .project_header{
@@ -49,6 +52,7 @@
   display: flex;
   flex-direction: column;
 
+
 }
 
 .project_header_project_title{
@@ -58,6 +62,7 @@
   align-items: center;
   color: #202020;
   font-size: 300%;
+
 }
 .project_page_title{
   margin-left: 20px;
@@ -80,12 +85,13 @@
   font-weight: 100;
 }
 
-.project_picture_conatiner{
+.project_picture_container{
   height: 55%;
   max-height: 600px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+
 }
 
 .main_project_image_container{

@@ -51,7 +51,7 @@ class ProjectPage extends React.Component {
               </div>
             </div>
           </header>
-          <figure className="project_picture_conatiner">
+          <figure className="project_picture_container">
             <figure className="main_project_image_container">
               <img className="main_project_image"
                 src={`${project.image_url}`}
