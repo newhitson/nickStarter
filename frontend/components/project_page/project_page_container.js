@@ -3,8 +3,9 @@ import ProjectPage from './project_page';
 
 import { requestSingleProject } from '../../actions/projects_actions';
 
-const mapStateToProps = ({ projects }) => {
+const mapStateToProps = ({ params, projects }) => {
   return {
+    params,
     projects
   };
 };

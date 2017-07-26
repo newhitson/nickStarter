@@ -4,11 +4,14 @@ import Rewards from './rewards';
 import { selectAllRewards } from '../../reducers/selectors';
 import { requestRewards } from '../../actions/rewards_actions';
 
-const mapStateToProps = ({ rewards }) => {
+const mapStateToProps = ({params, rewards }) => {
   return {
+    params,
     rewards: selectAllRewards(rewards)
   };
 };
+
+
 
 
 const mapDispatchToProps = dispatch => ({

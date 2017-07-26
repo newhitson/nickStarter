@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { Line } from 'rc-progress';
+import RewardContainer from '../reward_display/rewards_container';
 
 class ProjectPage extends React.Component {
 
@@ -103,7 +104,8 @@ class ProjectPage extends React.Component {
               </figure>
             </figure>
             <figure className="project_page_rewards_container">
-              <p>rewards</p>
+              <h1>rewards </h1>
+              < RewardContainer />
             </figure>
           </figure>
 

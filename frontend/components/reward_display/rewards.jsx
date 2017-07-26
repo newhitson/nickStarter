@@ -6,18 +6,20 @@ import { Link, withRouter } from 'react-router-dom';
 class Rewards extends React.Component {
 
   componentDidMount() {
-    this.props.requestRewards(1);
+    this.props.requestRewards(62);
+
     //this.props.params.match.projectId
   }
   // {projects.map(pro => <ProjectBlurb key={pro.id}project={pro} />)}
 
   render() {
+    console.log(this.props);
     const { rewards } = this.props;
     return (
       <section>
         <div className="rewards_nav_container" >
             {rewards.map(reward => <h1>{reward.title}</h1>)}
-        R</div>
+        </div>
 
     </section>
 

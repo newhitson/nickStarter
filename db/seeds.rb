@@ -10,6 +10,8 @@ Project.delete_all
 
 User.delete_all
 
+Reward.delete_all
+
 user1 = User.create!(
   username: "BobbyTables",
   password: "password",
@@ -29,7 +31,7 @@ user3 = User.create!(
 )
 
 
-Project.create!(
+project1 = Project.create!(
   title: "Paper Mache Volcano",
   image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
   description: "When you add vinegar to bicarbonate of soda a chemical
@@ -52,7 +54,23 @@ Project.create!(
   category_id: 8,
   funded: 25
 )
-Project.create!(
+
+Reward.create(
+  project_id: project1.id,
+  title: "high five",
+  description: "highs five",
+  cost: 5
+)
+Reward.create(
+  project_id: project1.id,
+  title: "high five2",
+  description: " 2 highs five",
+  cost: 9
+)
+
+
+
+project2 = Project.create!(
   title: "Flying Potatoes",
   image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
   description: "The potato gun beautifully illustrates Boyle’s Law,
@@ -67,6 +85,13 @@ Project.create!(
   creator_id: user2.id,
   category_id: 8,
   funded: 75
+)
+
+Reward.create(
+  project_id: project2.id,
+  title: "selfie",
+  description: "selfie in the face",
+  cost: 5
 )
 
 Project.create!(
