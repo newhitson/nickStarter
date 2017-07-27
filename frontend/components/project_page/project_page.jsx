@@ -104,7 +104,6 @@ class ProjectPage extends React.Component {
               </figure>
             </figure>
             <figure className="project_page_rewards_container">
-              <h1>rewards </h1>
               < RewardContainer />
             </figure>
           </figure>

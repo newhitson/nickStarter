@@ -14,7 +14,10 @@ class Rewards extends React.Component {
   render() {
     const { rewards } = this.props;
     return (
-      <section>
+      <section className="rewards_section">
+        <div className="support">
+        <h1 > Support this project</h1>
+        </div>
         <div>
           {rewards.map(reward => <RewardBlurb key={reward.id} reward={reward}/>)}
         </div>

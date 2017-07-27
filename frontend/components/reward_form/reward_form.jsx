@@ -95,13 +95,12 @@ class RewardForm extends React.Component {
             <div className="project_input_description_div">
             <label>
 
-            <textarea
+            <input type="text"
               value={this.state.description}
               onChange={this.update('description')}
               className="project-input"
               rows="6"
-            >
-          </textarea>
+            />
           </label>
             <div className="project_input_description">
             <p>What to offer?<br /> Copies of what you're making,
