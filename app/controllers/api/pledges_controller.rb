@@ -1,9 +1,10 @@
 class Api::PledgesController < ApplicationController
 
+
   # this might not be nessessary
   def index
-    if params[:project_id]
-      @pledges = Pledge.where(project_id: params[:project_id])
+    if params[:reward_id]
+      @pledges = Pledge.where(reward_id: params[:reward_id])
     else
       @pledges = Pledges.all
     end
@@ -13,18 +14,23 @@ class Api::PledgesController < ApplicationController
 
   def create
     @pledge = Pledge.new(pledge_params)
-    @pledge.backer_id = currentUser.id
-    @pledge.amount_pledged = 5
+    #project is really reward id
+    @pledge.amount_pledged = 0
+    #i dont think i needed this feild
+    @pledge.backer_id = current_user.id
+
+
 
     if @pledge.save
-      render :show
+      @pledge.project.funded += @pledge.reward.cost
+      render json: @pledge
     else
       render json: @pledge.errors.full_messages, status: 422
     end
   end
 
   def pledge_params
-    params.require(:pledge).permit(:backer_id, :project_id,
+    params.require(:pledge).permit(:reward_id, :backer_id,
                                    :amount_pledged)
   end
 

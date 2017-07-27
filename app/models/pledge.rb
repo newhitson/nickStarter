@@ -1,3 +1,14 @@
 class Pledge < ApplicationRecord
-  validates :project_id, :backer_id, :amount_pledged, presence: true
+  validates :reward_id, :backer_id, :amount_pledged, presence: true
+
+  belongs_to :reward,
+  primary_key: :id,
+  foreign_key: :reward_id,
+  class_name: :Reward
+
+  has_one :project,
+  through: :reward,
+  source: :project
+
+
 end

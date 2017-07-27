@@ -20,7 +20,7 @@ const RewardBlurb = ({ reward, createPledge }) => {
             # backers</p>
         </li>
       </ul>
-    <div className="green_blurb" onClick={() => createPledge(reward.id)}>
+    <div className="green_blurb" onClick={() => createPledge({reward_id: reward.id})}>
       <p>Select this reward</p>
 
     </div>

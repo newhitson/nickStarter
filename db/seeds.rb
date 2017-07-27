@@ -80,7 +80,7 @@ Reward.create(
 
 
 project2 = Project.create!(
-  title: "The Woman Who Feel to Earth",
+  title: "The Woman Who Fell to Earth",
   image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501108745/NCKSTRTR_GRAPHIC_NOVEL_003_ei4jbg.jpg",
   description: "A graphic novel with HD printing that combines immersive
    prose and lavish art in a compelling new twist on a very strange
