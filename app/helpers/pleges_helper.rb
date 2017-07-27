@@ -1,0 +1,2 @@
+module PlegesHelper
+end

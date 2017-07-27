@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pleges/create'
+
   namespace :api, defaults: { format: :json } do
     resources :projects, only: [:index, :show, :create]
     resources :rewards, only:[:index, :create]
