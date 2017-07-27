@@ -1,4 +1,16 @@
 class Api::PledgesController < ApplicationController
+
+  # this might not be nessessary
+  def index
+    if params[:project_id]
+      @pledges = Pledge.where(project_id: params[:project_id])
+    else
+      @pledges = Pledges.all
+    end
+    render :index
+  end
+
+
   def create
     @pledge = Pledge.new(pledge_params)
     if @pledge.save
