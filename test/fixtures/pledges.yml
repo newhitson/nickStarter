@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: pledges
+#
+#  id             :integer          not null, primary key
+#  backer_id      :integer
+#  project_id     :integer
+#  amount_pledged :integer
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  backer_id: 1
+  project_id: 1
+  amount_pledged: 1
+
+two:
+  backer_id: 1
+  project_id: 1
+  amount_pledged: 1
