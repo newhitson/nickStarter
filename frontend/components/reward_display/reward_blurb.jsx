@@ -1,7 +1,9 @@
 import React from 'react';
 
 
-const RewardBlurb = ({ reward }) => (
+const RewardBlurb = ({ reward, createPledge }) => {
+  console.log(createPledge);
+  return (
   <div className="reward_blurb">
       <ul className="unorder_reward_list">
         <li className="reward_li" >
@@ -18,10 +20,11 @@ const RewardBlurb = ({ reward }) => (
             # backers</p>
         </li>
       </ul>
-    <div className="green_blurb">
+    <div className="green_blurb" onClick={() => createPledge(reward.id)}>
       <p>Select this reward</p>
+
     </div>
   </div>
-);
+);};
 
 export default RewardBlurb;

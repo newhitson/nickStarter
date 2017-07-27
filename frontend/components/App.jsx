@@ -6,7 +6,7 @@ import {
   Link,
   HashRouter
 } from 'react-router-dom';
-import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute, OwnerRoute } from '../util/route_util';
 
 
 

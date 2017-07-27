@@ -13,6 +13,9 @@ class Api::PledgesController < ApplicationController
 
   def create
     @pledge = Pledge.new(pledge_params)
+    @pledge.backer_id = currentUser.id
+    @pledge.amount_pledged = 5
+
     if @pledge.save
       render :show
     else

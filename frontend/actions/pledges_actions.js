@@ -19,5 +19,5 @@ export const createPledge = pledge => dispatch => (
   APIUtil.createPledge(pledge).then(newPledge => {
     dispatch(receiveSinglePledge(newPledge));
     return newPledge;
-  }).fail(err => dispatch(receiveRewardErrors(err.responseJSON)))
+  }).fail(err => dispatch(receivePledgeErrors(err.responseJSON)))
 );

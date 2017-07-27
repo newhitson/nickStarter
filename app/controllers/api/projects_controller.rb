@@ -1,11 +1,16 @@
 class Api::ProjectsController < ApplicationController
   #before_action :require_logged_in, only: [:create]
+
+  FRONT_PAGE_TITLES = [ "title", "title" ]
+
   def index
-    if params[:category]
+    if params[:category] && params[:category] == 8
+      @projects = Project.where('title in (?)', FRONT_PAGE_TITLES)
+    elsif params[:category]
       @projects = Project.where(category_id: params[:category])
     else
       @projects = Project.all
-  end
+    end
     render :index
   end
 

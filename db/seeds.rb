@@ -32,27 +32,36 @@ user3 = User.create!(
 
 
 project1 = Project.create!(
-  title: "Paper Mache Volcano",
-  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
-  description: "When you add vinegar to bicarbonate of soda a chemical
-  reaction occurs – the result is 'carbonic acid'. This is an unstable
-  substance – you can tell from all the fizzing! The mixture instantly
-  separates into a gas and a liquid, producing carbon dioxide and water.
-  Discovering how to make a paper mache volcano erupt is a simple and safe
-  way to teach your kids the basics of how a chemical reaction works. If
-  you enjoyed learning how to make a volcano out of paper mache why not
-  try out some of our other paper mache activities, like the hot air
-  balloon, funky bangles, or mini versions of our paper mache dinosaurs
-  and dinosaur eggs – they’ll look great alongside your volcano!How did
-  you get on making a paper mache volcano? Let us know in a comment
-  below!",
-  tagline: "A classic craft for kids, this paper mache volcano is an
-  excellent science experiment too!",
-  end_date: Date.new(2018, 7, 5),
-  funding_goal: 50,
-  creator_id: user1.id,
+  title: "Temple City",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501106963/NCKSTRTR_VIDEO_GAME_003_jjlbld.jpg",
+  description: "A new state of-the-art game engine empowers players to
+  seize and resurrect abandoned temples floating in space, attract rabid
+   followers and topple the false heralds of chaos! there are two multiplayer modes.
+    The cooperative mode is similar to the typical horde mode found in
+     other action video games where players team up to defeat wave after
+      wave of enemies, but is unavailable at launch, launching instead
+      30 days after the game itself first becomes available. In addition
+      to the cooperative mode, a player can engage in an 8v8 class-based
+      team competitive mode. There are three classes the player can
+      choose from on the side of the Loyalist Space Marines or the
+      traitorous Chaos Space Marines.The player can gain experience in
+      gameplay by getting kills and assists on kills which will allow
+      him to gain levels.There are also challenges associated with
+      different weapons that will unlock perks for weapons or armour
+      pieces to customize a player's Astartes. In competitive
+      multiplayer, there are two different game modes. The first is
+      annihilation, which is a standard team death match, with the
+       winning team being whoever reaches 41 kills first. The
+      second is seize ground, in which the two teams battle over
+      objectives on the field that give points, and whichever
+      team reaches 1000 points first wins. A capture the flag
+      game mode is possible through a future update.",
+  tagline: "Amass more devoted followers than your rivals in this innovative video game set in deep space!",
+  end_date: Date.new(2018, 1, 5),
+  funding_goal: 500,
+  creator_id: user2.id,
   category_id: 8,
-  funded: 25
+  funded: 500
 )
 
 Reward.create(
@@ -71,15 +80,14 @@ Reward.create(
 
 
 project2 = Project.create!(
-  title: "Flying Potatoes",
-  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
-  description: "The potato gun beautifully illustrates Boyle’s Law,
-  which states that pressure and volume are inversely proportional. In
-  other words, as you decrease the volume of the air trapped in between
-  the two pieces of potato, the pressure exerted by the air increases.
-  This increase in pressure eventually forces the potato at the top end
-  to exit the tube with great pizzazz!",
-  tagline: "Nothing's more fun than a potato gun.",
+  title: "The Woman Who Feel to Earth",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501108745/NCKSTRTR_GRAPHIC_NOVEL_003_ei4jbg.jpg",
+  description: "A graphic novel with HD printing that combines immersive
+   prose and lavish art in a compelling new twist on a very strange
+   stranger in an even stranger land. See our lunacy through the confused
+    yet compassionate eyes of an intergalactic castaway forced to fight
+     people and state just to survive a single day until she is rescued.",
+  tagline: "Follow the exploits of our heroine as she tries to make sense of, and peace with, crazy Earthlings!",
   end_date: Date.new(2017, 10, 5),
   funding_goal: 100,
   creator_id: user2.id,
@@ -95,30 +103,31 @@ Reward.create(
 )
 
 Project.create!(
-  title: "Does the Weather Really Affect Mood?",
-  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
-  description: "Does weather have any effect on mood?
-  Are people more likely to be dissatisfied or melancholy on a rainy,
-  overcast day? Are people more likely to be happy on a sunny day?
-  Is one gender or age group more likely to be influenced by the weather?",
-  tagline: "It has long been believed that weather has influence over
-  people's mood and behavior.",
+  title: "Universal Pet Insurace",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501177002/s3620n02esgmiool_zss2jj.jpg",
+  description: "While we debate and vote on the rights of Americans to
+    gain or maintain health care, there are those we love who have no votes
+    and no rights to a happy, healthy life ... without our help! The very
+    pets we love, who bring us joy and utter devotion, need our support.
+    Give generously to this humane new charity that can make a difference
+    in millions of lives.",
+  tagline: "Can we afford to let our best friends down?",
   end_date: Date.new(2017, 9, 6),
-  funding_goal: 200,
+  funding_goal: 20000,
   creator_id: user3.id,
   category_id: 8,
     funded: 175
 )
 
 Project.create!(
-  title: "Does the Weather Really Affect Mood?",
-  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
-  description: "Does weather have any effect on mood?
-  Are people more likely to be dissatisfied or melancholy on a rainy,
-  overcast day? Are people more likely to be happy on a sunny day?
-  Is one gender or age group more likely to be influenced by the weather?",
-  tagline: "It has long been believed that weather has influence over
-  people's mood and behavior.",
+  title: "Classic Rideshare",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501111376/NCKSTRTR_CLASSIC_CAR_RENTAL_AGENCY_001_dosnnq.jpg",
+  description: "Tired of being dropped off in front of your friends by a
+   standard Prius or Civic?  Why not step out in style with classic
+   confidence!  Classic cars and uniformed drivers are just a few taps
+   away with an iPhone or Android app that assures you of a great first
+   and last impression.",
+  tagline: "Travel in timeless style!",
   end_date: Date.new(2018, 1, 5),
   funding_goal: 200,
   creator_id: user1.id,

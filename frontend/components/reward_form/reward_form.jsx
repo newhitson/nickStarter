@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, withRouter, Redirect } from 'react-router-dom';
 
 
 
@@ -19,6 +19,10 @@ class RewardForm extends React.Component {
     return e => this.setState({
       [field]: e.currentTarget.value
     });
+  }
+
+  componentWillMount(){
+    this.props.requestSingleProject();
   }
 
   componentDidMount(){
@@ -47,8 +51,9 @@ class RewardForm extends React.Component {
   }
 
   render() {
-    console.log(this.props);
-    console.log(this.state);
+    if (!this.props.isOwner) {
+      return( <Redirect to="/" />);
+    }
     return (
       <div className="project_page_background">
         <div className="project_form_container">
