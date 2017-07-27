@@ -14,6 +14,9 @@ class ProjectPage extends React.Component {
     if (this.props.match.params.projectId !== newProps.match.params.projectId ){
       this.props.requestSingleProject(this.props.match.params.projectId);
     }
+    if (this.props.pledges.pledge !== newProps.pledges.pledge){
+      this.props.requestSingleProject(this.props.match.params.projectId);
+    }
   }
 
   timeleft(end) {

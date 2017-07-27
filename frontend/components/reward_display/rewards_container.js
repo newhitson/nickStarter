@@ -6,9 +6,8 @@ import { selectAllRewards } from '../../reducers/selectors';
 import { requestRewards } from '../../actions/rewards_actions';
 import { createPledge } from '../../actions/pledges_actions';
 
-const mapStateToProps = ({rewards }) => {
+const mapStateToProps = ({ rewards}) => {
   return {
-
     rewards: selectAllRewards(rewards)
   };
 };

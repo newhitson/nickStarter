@@ -7,6 +7,7 @@ import {
   CLEAR_PROJECTS
 } from '../actions/projects_actions';
 
+
 const defaultState = Object.freeze({
   projects: {},
   errors: []

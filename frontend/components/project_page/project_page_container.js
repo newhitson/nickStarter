@@ -3,10 +3,11 @@ import ProjectPage from './project_page';
 
 import { requestSingleProject } from '../../actions/projects_actions';
 
-const mapStateToProps = ({ params, projects }) => {
+const mapStateToProps = ({ params, projects, pledges}) => {
   return {
     params,
-    projects
+    projects,
+    pledges
   };
 };
 // selectAllProjects(projects) add this to give us an array
