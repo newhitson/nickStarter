@@ -22,7 +22,8 @@ class Api::PledgesController < ApplicationController
 
 
     if @pledge.save
-      @pledge.project.funded += @pledge.reward.cost
+      @pledge.reward.project.funded += @pledge.reward.cost
+      @pledge.reward.project.save!
       render json: @pledge
     else
       render json: @pledge.errors.full_messages, status: 422

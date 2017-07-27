@@ -6,9 +6,6 @@ class Pledge < ApplicationRecord
   foreign_key: :reward_id,
   class_name: :Reward
 
-  has_one :project,
-  through: :reward,
-  source: :project
 
 
 end
