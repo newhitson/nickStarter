@@ -11,4 +11,6 @@ User Authentication
 
 brining ideas to life
 
+![Alt Text](https://media.giphy.com/media/woD9FsDYpPCBW/giphy.gif)
+
 wireframe / final project

@@ -16,8 +16,7 @@ const RewardBlurb = ({ reward, createPledge }) => {
           <p className="reward_description">
           {reward.description}</p></li>
         <li className="reward_li">
-          <p className="reward_backers">
-            # backers</p>
+          <p className="reward_backers"></p>
         </li>
       </ul>
     <div className="green_blurb" onClick={() => createPledge({reward_id: reward.id})}>
