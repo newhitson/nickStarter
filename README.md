@@ -1,21 +1,21 @@
-# NickStarter
+### NickStarter
 
 [NickStarter](http://nick-starter.herokuapp.com/#/)
 
 Nickstarter is a crowd-funding web application inspired by Kickstarter. Built with Ruby on Rails and React-Redux, users can create projects which other users can fund at various reward levels.
 
-#Features & Implementation
+### Features & Implementation
 
 * Create Projects and customize the rewards associated with funding.
 * Secure user authentication using BCrypt
 * Explore projects created by other users
 
 
-#Bringing wireframe to life
+### Bringing wireframes to life
 
 ![Alt Text](https://media.giphy.com/media/woD9FsDYpPCBW/giphy.gif "wire Frames")
 
-#Adding Resources
+### Adding Resources
 
 * [Database Schema](docs/schema.me)
 * [Design Wireframes](docs/wireframes)
@@ -25,7 +25,7 @@ Nickstarter is a crowd-funding web application inspired by Kickstarter. Built wi
 
 ### Rewards
 
-Users have full access to create, read, update, or destroy their tracks.  Tracks are indexed on the home page by number of annotations.
+
 
 ``` javascript
 render() {
