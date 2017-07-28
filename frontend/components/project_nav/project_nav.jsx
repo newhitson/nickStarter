@@ -25,7 +25,7 @@ class ProjectNav extends React.Component {
                 </div>
             </div>
           </div>
-
+  
     </section>
 
 

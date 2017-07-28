@@ -1,10 +1,11 @@
 class Api::ProjectsController < ApplicationController
   #before_action :require_logged_in, only: [:create]
 
-  FRONT_PAGE_TITLES = [ "title", "title" ]
+  FRONT_PAGE_TITLES = [ "Temple City", "The Woman Who Fell to Earth", "Universal Pet Insurace", "Classic Rideshare" ,
+                        "Does the Weather Really Affect Mood?"]
 
   def index
-    if params[:category] && params[:category] == 8
+    if params[:category] && params[:category] == "8"
       @projects = Project.where('title in (?)', FRONT_PAGE_TITLES)
     elsif params[:category]
       @projects = Project.where(category_id: params[:category])

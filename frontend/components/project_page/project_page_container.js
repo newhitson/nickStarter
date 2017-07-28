@@ -3,8 +3,11 @@ import ProjectPage from './project_page';
 
 import { requestSingleProject } from '../../actions/projects_actions';
 
-const mapStateToProps = ({ params, projects, pledges}) => {
+const mapStateToProps = ({ params, projects, pledges ,session}) => {
+  const project = projects.project;
+  const currentUsers = session.currentUser ?  session.currentUser.id : 0;
   return {
+    isOwner: project ? project.creator_id === currentUsers : true,
     params,
     projects,
     pledges

@@ -265,6 +265,15 @@ class ProjectForm extends React.Component {
                   value="Submit" />
             </form>
         <div className="project_form_sidebar" >
+          <p>
+            Every Nickstarter project is an opportunity to create the
+            universe and culture you want to see. The games you wish you
+             could play, the films you wish you could watch, the
+             technology you wish someone was building — on Nickstarter,
+             people work together to make those things a reality.
+
+
+      </p>
         </div>
         </div>
       </div>

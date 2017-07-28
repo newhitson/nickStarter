@@ -19,6 +19,21 @@ class ProjectPage extends React.Component {
     }
   }
 
+  editRewards() {
+    console.log(this.props);
+    if (this.props.isOwner){
+    return(
+      <div>
+      <br />
+        <Link to={`/rewards/${this.props.match.params.projectId}`}>
+          <input className="session_submit_button"
+                 type="submit"
+                 value="Add rewards to project" />
+        </Link>
+      </div>
+    );}
+  }
+
   timeleft(end) {
     var myDate= end;
     myDate=myDate.split("-");
@@ -88,7 +103,8 @@ class ProjectPage extends React.Component {
                 <input className="session_submit_button"
                        type="submit"
                        value="Back this project" />
-                <br />
+                     <br />
+                {this.editRewards()}
                 <span className="project_blurb_funded_text">All or
                   nothing. This project will only be funded if it
                   reaches its goal</span>

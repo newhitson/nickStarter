@@ -1,24 +1,14 @@
-# README
+# NickStarter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[NickStarter](http://nick-starter.herokuapp.com/#/
 
-Things you may want to cover:
+Nickstarter is a crowd-funding web application inspired by Kickstarter and built on Ruby on Rails and React-Redux. Users can create projects which other users can back at various reward levels.
 
-* Ruby version
+Categories
+Projects
+User Authentication
 
-* System dependencies
 
-* Configuration
+brining ideas to life
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+wireframe / final project

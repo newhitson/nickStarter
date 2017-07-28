@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  #I might have messed with the controllers inheritance??   
+  #I might have messed with the controllers inheritance??
 
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
@@ -30,7 +30,7 @@ class ApplicationController < ActionController::Base
   end
 
   def require_logged_in
-    render json: {base: ['invalid credentials']}, status: 401 if !current_user
+    render json: { base: ['invalid credentials'] }, status: 401 if !current_user
   end
 
 end

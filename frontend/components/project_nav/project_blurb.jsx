@@ -16,6 +16,23 @@ const timeleft = function(end) {
   return (diffDays);
 };
 
+const category = function(id) {
+
+  var categories = { 1: "Art",
+                  2: "Comics",
+                  3: "Design",
+                  4: "Food",
+                  5: "Games",
+                  6: "Music",
+                  7: "Technology",
+                  8: "recomened for you"};
+      let projectCategory = categories[id];
+  return (projectCategory);
+
+};
+
+
+
 
 
 const ProjectBlurb = ({ project }) => (
@@ -24,7 +41,7 @@ const ProjectBlurb = ({ project }) => (
       <img src={`${project.image_url}`}
         className="project_blurb_img"/></Link>
       <div className="project_blurb_cat_box">
-        <span className="project_blurb_cat_text" >category_id{project.category_id}</span>
+        <span className="project_blurb_cat_text" >{category(project.category_id)}</span>
       </div>
       <div className="project_blurb_title_box">
         <span className="project_blurb_title_text" >{project.title}</span>
@@ -42,7 +59,7 @@ const ProjectBlurb = ({ project }) => (
           pledged</span>
         <br/>
         <span className="project_blurb_funded_text"><span
-           className="dark_grey">{project.funded/project.funding_goal * 100}%</span>
+           className="dark_grey">{Math.floor(project.funded/project.funding_goal * 100)}%</span>
          funded</span>
         <br/>
         <span className="project_blurb_funded_text"><span
