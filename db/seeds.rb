@@ -291,22 +291,348 @@ Reward.create(
 )
 
 
-Project.create!(
-  title: "Build a Knife",
-  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
-  description: "Now you need to decide how to attach the handle to the
-  blade. There are three common methods of doing this: a full tang, a
-  partial tang, or a through-tang. A full tang has the same profile as
-  the handle of the knife, and the meat of the handle is formed by two
-  slabs of wood (scales) to either side of the tang; most good knives
-  are made this way. The knife I'm making here is a full tang knife. A
-  partial tang is the most inconspicuous of the three and, in my view,
-  the hardese",
-  tagline: "knife making is a slow, delicate, painstaking,
-  multi-faceted, sometimes frustrating process",
-  end_date: Date.new(2017, 11, 8),
-  funding_goal: 200,
+project7 = Project.create!(
+  title: "Mad Potter Studio",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501266713/alex-jones-6798_qmrbij.jpg",
+  description: "There are several materials that are referred to as clay.
+   The properties which make them different include: Plasticity, the
+   malleability of the body; the extent to which they will absorb water
+   after firing; and shrinkage, the extent of reduction in size of a body
+    as water is removed. Different clay bodies also differ in the way in
+     which they respond when fired in the kiln. A clay body can be
+     decorated before or after firing. Prior to some shaping processes,
+     clay must be prepared. Each of these different clays are composed
+     of different types and amounts of minerals that determine the
+     characteristics of resulting pottery. There can be regional
+     variations in the properties of raw materials used for the
+     production of pottery, and this can lead to wares that are unique
+     in character to a locality. It is common for clays and other
+     materials to be mixed to produce clay bodies suited to specific
+     purposes. A common component of clay bodies is the mineral
+     kaolinite. Other mineral compounds in the clay may act as fluxes
+     which lower the vitrification temperature of bodies. Following is a
+     list of different types of clay used for pottery",
+  tagline: "Trying to get my hands around my passion! Clays for days!",
+  end_date: Date.new(2018, 4, 8),
+  funding_goal: 2000,
   creator_id: user2.id,
-  category_id: 2,
-  funded: 75
+  category_id: 1,
+  funded: 175
+)
+
+Reward.create(
+  project_id: project7.id,
+  title: "Completed pottery piece",
+  description: "I will send you 1 completed piece of pottery",
+  cost: 75
+)
+
+Reward.create(
+  project_id: project7.id,
+  title: "2 Completed pottery pieces",
+  description: "I will send you 2 completed pieces of pottery",
+  cost: 125
+)
+
+project8 = Project.create!(
+  title: "Graffiti Book: South African Street Art: Volume Two",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501267088/lucas-gallone-228252_tzptbt.jpg",
+  description: "Street art is a form of artwork that is displayed in a
+  community on its surrounding buildings, streets, and other publicly
+  viewed surfaces. Many instances come in the form of guerrilla art,
+  which is composed to make a public statement about the society that
+  the artist lives within. The work has moved from the beginnings of
+  graffiti and vandalism to new modes where artists work to bring
+  messages, or just simple beauty, to an audience",
+  tagline: "Speak softly, but carry a big can of paint",
+  end_date: Date.new(2018, 9, 8),
+  funding_goal: 2500,
+  creator_id: user2.id,
+  category_id: 1,
+  funded: 350
+)
+
+Reward.create(
+  project_id: project8.id,
+  title: "Completed pottery piece",
+  description: "A digital book version",
+  cost: 10
+)
+
+Reward.create(
+  project_id: project8.id,
+  title: "2 Completed pottery pieces",
+  description: "ONE signed paperback copy",
+  cost: 20
+)
+
+project9 = Project.create!(
+  title: "Bring oragami to the classroom",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501267447/dev-benjamin-219413_rvznqh.jpg",
+  description: "Origami (折り紙, from ori meaning folding, and kami
+   meaning paper (kami changes to gami due to rendaku)) is the art of
+    paper folding, which is often associated with Japanese culture. In
+    modern usage, the word origami is used as an inclusive term for
+    all folding practices, regardless of their culture of origin. The
+    goal is to transform a flat sheet square of paper into a finished
+    sculpture through folding and sculpting techniques. Modern origami
+    practitioners generally discourage the use of cuts, glue, or markings
+     on the paper. Origami folders often use the Japanese word kirigami
+     to refer to designs which use cuts, although cutting is more
+     characteristic of Chinese papercrafts.",
+  tagline: "You must always fold with care and precision, because
+  otherwise the final result may be disastrous",
+  end_date: Date.new(2018, 9, 8),
+  funding_goal: 7500,
+  creator_id: user2.id,
+  category_id: 1,
+  funded: 950
+)
+
+Reward.create(
+  project_id: project9.id,
+  title: "Teacher",
+  description: "One childs paper crane",
+  cost: 10
+)
+
+Reward.create(
+  project_id: project9.id,
+  title: "Principle",
+  description: "One thousand childrens paper cranes",
+  cost: 2000
+)
+
+project10 = Project.create!(
+  title: "Live on Canvas",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501267936/rawpixel-com-196509_knib2l.jpg",
+  description: "The process consists of four major steps, performed in a
+   photographic darkroom or within an automated photo printing machine.
+   These steps are:
+Exposure of the image onto the sensitized paper using a contact printer
+or enlarger;
+Processing of the latent image using the following chemical process:
+Development of the exposed image reduces the silver halide in the latent
+ image to metallic silver;
+Stopping development by neutralising, diluting or removing the developing
+chemicals;
+Fixing the image by dissolving undeveloped silver halide from the
+light-sensitive emulsion:
+Washing thoroughly to remove processing chemicals protects the finished
+print from fading and deterioration.
+Optionally, after fixing, the print is treated with a hypo clearing agent
+ to ensure complete removal of the fixer, which would otherwise compromise
+  the long term stability of the image. Prints can be chemically toned or
+   hand coloured after processing",
+  tagline: "Taking photo and bringing them home",
+  end_date: Date.new(2018, 9, 8),
+  funding_goal: 600,
+  creator_id: user2.id,
+  category_id: 1,
+  funded: 100
+)
+
+Reward.create(
+  project_id: project10.id,
+  title: "One print",
+  description: "You'll get a physical copy your print 1",
+  cost: 10
+)
+
+Reward.create(
+  project_id: project10.id,
+  title: "5 prints",
+  description: "You'll get 5 physical copies your prints ",
+  cost: 40
+)
+
+project11 = Project.create!(
+  title: "Fighting adamitism with music ",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501268256/soroush-karimi-225177_ivwvlf.jpg",
+  description: "The violin is a wooden string instrument in the violin
+  family. It is the smallest and highest-pitched instrument in the family
+   in regular use. Smaller violin-type instruments are known, including
+   the violino piccolo and the kit violin, but these are virtually unused
+    in the 2010s. The violin typically has four strings tuned in perfect
+    fifths, and is most commonly played by drawing a bow across its strings,
+     though it can also be played by plucking the strings with the fingers
+     (pizzicato). Violins are important instruments in a wide variety of
+     musical genres. They are most prominent in the Western classical
+     tradition and in many varieties of folk music. They are also
+     frequently used in genres of folk including country music and
+     bluegrass music and in jazz. Electric violins are used in some
+     forms of rock music; further, the violin has come to be played in
+     many non-Western music cultures, including Indian music and Iranian
+      music. The violin is sometimes informally called a fiddle,
+      particularly in Irish traditional music and bluegrass, but this
+      nickname is also used regardless of the type of music played on it.",
+  tagline: "Taking photo and bringing them home",
+  end_date: Date.new(2018, 9, 8),
+  funding_goal: 300,
+  creator_id: user2.id,
+  category_id: 6,
+  funded: 145
+)
+
+Reward.create(
+  project_id: project11.id,
+  title: "One digigtal CD",
+  description: "You'll get a digital copy our first CD",
+  cost: 10
+)
+
+Reward.create(
+  project_id: project11.id,
+  title: "One physical CD",
+  description: "You'll get a physical copy of our first CD ",
+  cost: 15
+)
+
+project12 = Project.create!(
+  title: "DropTone microphone",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501268847/kelly-sikkema-209680_mctebu.jpg",
+  description: "TA microphone, colloquially nicknamed mic or mike, is a
+  transducer that converts sound into an electrical signal.
+Microphones are used in many applications such as telephones, hearing
+aids, public address systems for concert halls and public events, motion
+ picture production, live and recorded audio engineering, sound recording,
+  two-way radios, megaphones, radio and television broadcasting, and in
+  computers for recording voice, speech recognition, VoIP, and for
+  non-acoustic purposes such as ultrasonic sensors or knock sensors.",
+  tagline: "Finally a microphone that optimizes drop tone frequencies ",
+  end_date: Date.new(2018, 9, 8),
+  funding_goal: 30000,
+  creator_id: user2.id,
+  category_id: 6,
+  funded: 2250
+)
+
+Reward.create(
+  project_id: project12.id,
+  title: "The early bird",
+  description: "DropTone Microphone - $150 off the MSRP! Free Shipping
+  in US Only.",
+  cost: 550
+)
+Reward.create(
+  project_id: project12.id,
+  title: "DropTone Microphone",
+  description: " Free Shipping in US Only.",
+  cost: 700
+)
+
+project13 = Project.create!(
+  title: "Optimum Fantasy Chess",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501272595/lou-levit-1940_1_vhhe8c.jpg",
+  description: "Each player begins with 16 pieces: one king, one queen,
+  two rooks, two knights, two bishops, and eight pawns. Each of the six
+  piece types moves differently, with the most powerful being the queen
+  and the least powerful the pawn. The objective is to checkmate the
+  opponent's king by placing it under an inescapable threat of capture.
+  To this end, a player's pieces are used to attack and capture the
+  opponent's pieces, while supporting each other. In addition to checkmate,
+   the game can be won by voluntary resignation of the opponent, which
+   typically occurs when too much material is lost or checkmate appears
+   unavoidable. A game can also in several ways end in a draw.",
+  tagline: "The first expansion to chess, includes abiltiy, names and traits",
+  end_date: Date.new(2018, 3, 2),
+  funding_goal: 6000,
+  creator_id: user2.id,
+  category_id: 5,
+  funded: 1200
+)
+
+Reward.create(
+  project_id: project13.id,
+  title: "Knight",
+  description: "Optimum Fantasy Chess pieces and rule book",
+  cost: 100
+)
+Reward.create(
+  project_id: project13.id,
+  title: "Castle",
+  description: "Optimum Fantasy Chess pieces and rule book with custom board",
+  cost: 200
+)
+Reward.create(
+  project_id: project13.id,
+  title: "Queen",
+  description: "Optimum Fantasy Chess Hand Crafted pieces and rule book with custom board",
+  cost:350
+)
+
+project14 = Project.create!(
+  title: "Scrapple optical spellchecker",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501273077/moritz-schmidt-17467_xkfqpg.jpg",
+  description: "In the notation system common in tournament play,
+  columns are labeled with the letters A-O and rows with the numbers 1-15.
+   (On Scrabble boards manufactured by Mattel as well as on the Internet
+    Scrabble Club, rows are lettered while columns are numbered instead.)
+     A play is usually identified in the format xy WORD score or WORD xy
+      score, where x denotes the column or row on which the play's main
+      word extends, y denotes the second coordinate of the main word's
+      first letter, and WORD is the main word. Although unnecessary,
+      additional words formed by the play are occasionally listed after
+      the main word and a slash. In the case where the play of a single
+        tile forms words in each direction, one of the words is arbitrarily
+        chosen to serve as the main word for purposes of notation.",
+  tagline: "Never argue about what is and isn't a word",
+  end_date: Date.new(2018, 3, 2),
+  funding_goal: 6000,
+  creator_id: user2.id,
+  category_id: 5,
+  funded: 1200
+)
+
+Reward.create(
+  project_id: project14.id,
+  title: "A1",
+  description: "Scrabble optical camera",
+  cost: 100
+)
+Reward.create(
+  project_id: project14.id,
+  title: "D2",
+  description: " Two scrabble optical camera",
+  cost: 200
+)
+Reward.create(
+  project_id: project14.id,
+  title: "B3",
+  description: "Three Scrabble optical camera",
+  cost: 200
+)
+
+project14 = Project.create!(
+  title: "Rock Hard Controller Skin",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501273741/sherry-zhu-196388_ealcyr.jpg",
+  description: "A gamepad, also known as a joypad, is held in both hands
+   with thumbs and fingers used to provide input. Gamepads can have a
+   number of action buttons combined with one or more omnidirectional
+   control sticks or buttons. Action buttons are generally handled with
+   the digits on the right hand, and the directional input handled with
+   the left. Gamepads are the primary means of input on most modern video
+    game consoles. Due to the ease of use and user-friendly nature of
+    gamepads, they have spread from their origin on traditional consoles
+     to computers, where a variety of games and emulators support their
+      input as a replacement for keyboard and mouse input",
+  tagline: "Whoever controls the media, controls the mind",
+  end_date: Date.new(2018, 4, 18),
+  funding_goal: 600,
+  creator_id: user2.id,
+  category_id: 5,
+  funded: 200
+)
+
+Reward.create(
+  project_id: project14.id,
+  title: "Game skin",
+  description: "One skin to attach to a controller",
+  cost: 20
+)
+Reward.create(
+  project_id: project14.id,
+  title: "Two Game skin",
+  description: "Tne skin to attach to a controller",
+  cost: 30
 )

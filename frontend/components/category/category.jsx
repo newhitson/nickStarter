@@ -17,8 +17,7 @@ class Category extends React.Component {
     const { projects } = this.props;
     return (
       <section className="frontpage">
-        <p className="Category_title">
-          Category</p>
+        <p className="Category_title"></p>
           <div className="nav_project_container">
             <div className="nav_project_nav">
 
