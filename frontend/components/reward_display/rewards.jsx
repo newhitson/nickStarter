@@ -20,7 +20,7 @@ class Rewards extends React.Component {
         </div>
         <div>
           {rewards.map(reward => <RewardBlurb key={reward.id}
-             reward={reward}/>)}
+            createPledge={this.props.createPledge}  reward={reward}/>)}
         </div>
     </section>
     );
