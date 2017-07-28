@@ -2,7 +2,7 @@ class Api::ProjectsController < ApplicationController
   #before_action :require_logged_in, only: [:create]
 
   FRONT_PAGE_TITLES = [ "Temple City", "The Woman Who Fell to Earth", "Universal Pet Insurace", "Classic Rideshare" ,
-                        "Does the Weather Really Affect Mood?"]
+                         "BRAVE LITTLE ROASTR", "Moblie Tree Home"]
 
   def index
     if params[:category] && params[:category] == "8"

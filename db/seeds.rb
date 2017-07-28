@@ -58,23 +58,32 @@ project1 = Project.create!(
       game mode is possible through a future update.",
   tagline: "Amass more devoted followers than your rivals in this innovative video game set in deep space!",
   end_date: Date.new(2018, 1, 5),
-  funding_goal: 500,
+  funding_goal: 300000,
   creator_id: user2.id,
-  category_id: 8,
-  funded: 500
+  category_id: 5,
+  funded: 125000
 )
 
 Reward.create(
   project_id: project1.id,
-  title: "high five",
-  description: "highs five",
-  cost: 5
+  title: "Lieutenant",
+  description: "You get your choice of one of the faction fleet packs.
+   These are the best buys, giving you the most for your money!",
+  cost: 55
 )
 Reward.create(
   project_id: project1.id,
-  title: "high five2",
-  description: " 2 highs five",
-  cost: 9
+  title: "Commodore",
+  description: "You get your choice of two faction fleet packs. At this
+  level you are also eligible to receive any of the stretch goal bonuses",
+  cost: 100
+)
+Reward.create(
+  project_id: project1.id,
+  title: "Fleet Admiral",
+  description: "You get one of all three faction fleet packs, plus an
+  additonal $60 dollars worth of ships at regular prices of your choice",
+  cost: 150
 )
 
 
@@ -87,22 +96,41 @@ project2 = Project.create!(
    stranger in an even stranger land. See our lunacy through the confused
     yet compassionate eyes of an intergalactic castaway forced to fight
      people and state just to survive a single day until she is rescued.",
-  tagline: "Follow the exploits of our heroine as she tries to make sense of, and peace with, crazy Earthlings!",
+  tagline: "Follow the exploits of our heroine as she tries to make sense
+   of, and peace with, crazy Earthlings!",
   end_date: Date.new(2017, 10, 5),
-  funding_goal: 100,
+  funding_goal: 1500,
   creator_id: user2.id,
-  category_id: 8,
+  category_id: 2,
   funded: 75
 )
 
 Reward.create(
   project_id: project2.id,
-  title: "selfie",
-  description: "selfie in the face",
+  title: "See The World, And Glimpse What Comes Next ",
+  description: "For this amount you'll get not only the PDF for issue #1,
+   but also a piece of concept art",
   cost: 5
 )
 
-Project.create!(
+Reward.create(
+  project_id: project2.id,
+  title: "Hold The World In Your Hands",
+  description: "You'll get a physical copy of issue #1, so you can feel
+   the story come to life",
+  cost: 10
+)
+
+Reward.create(
+  project_id: project2.id,
+  title: "Have Your Name Attached To Our World",
+  description: "If you pledge here, you'll be put into a special Thank
+  You section of issue #1, so all the world can see how you helped make
+   this comic.",
+  cost: 15
+)
+
+project3 = Project.create!(
   title: "Universal Pet Insurace",
   image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501177002/s3620n02esgmiool_zss2jj.jpg",
   description: "While we debate and vote on the rights of Americans to
@@ -113,13 +141,38 @@ Project.create!(
     in millions of lives.",
   tagline: "Can we afford to let our best friends down?",
   end_date: Date.new(2017, 9, 6),
-  funding_goal: 20000,
+  funding_goal: 2000000,
   creator_id: user3.id,
-  category_id: 8,
-    funded: 175
+  category_id: 7,
+  funded: 150000
 )
 
-Project.create!(
+
+Reward.create(
+  project_id: project3.id,
+  title: "Caregiver",
+  description: "provides you with the finest in comprehensive veterinary
+   medicine for your pet",
+  cost: 6000
+)
+
+Reward.create(
+  project_id: project3.id,
+  title: "Care counselor",
+  description: "provides you with the finest in comprehensive veterinary
+   medicine for pets in your area",
+  cost: 12000
+)
+
+Reward.create(
+  project_id: project3.id,
+  title: "Care Coordinator",
+  description: "provides you with the finest in comprehensive veterinary
+   medicine for your city",
+  cost: 25000
+)
+
+project4 = Project.create!(
   title: "Classic Rideshare",
   image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501111376/NCKSTRTR_CLASSIC_CAR_RENTAL_AGENCY_001_dosnnq.jpg",
   description: "Tired of being dropped off in front of your friends by a
@@ -131,41 +184,110 @@ Project.create!(
   end_date: Date.new(2018, 1, 5),
   funding_goal: 200,
   creator_id: user1.id,
-  category_id: 8,
+  category_id: 7,
   funded: 10
 )
 
-Project.create!(
-  title: "Does the Weather Really Affect Mood?",
-  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
-  description: "Does weather have any effect on mood?
-  Are people more likely to be dissatisfied or melancholy on a rainy,
-  overcast day? Are people more likely to be happy on a sunny day?
-  Is one gender or age group more likely to be influenced by the weather?",
-  tagline: "It has long been believed that weather has influence over
-  people's mood and behavior.",
+Reward.create(
+  project_id: project4.id,
+  title: "Classic Car",
+  description: "Give friends and family the gift of tapping a button and
+   getting 10 rides - any time of day, any day of year",
+  cost: 150
+)
+
+Reward.create(
+  project_id: project4.id,
+  title: "Muscle Car",
+  description: "Give friends and family the gift of tapping a button and
+   getting 20 rides - any time of day, any day of year",
+  cost: 250
+)
+
+Reward.create(
+  project_id: project4.id,
+  title: "Street Rod",
+  description: "Give friends and family the gift of tapping a button and
+   getting 30 rides - any time of day, any day of year",
+  cost: 250
+)
+
+project5 = Project.create!(
+  title: "BRAVE LITTLE ROASTR",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501184576/NCKSTRTR_BRAVE_LITTLE_ROASTER_003_uqslzf.jpg",
+  description: "Hip flask size and lightweight, the Brave Little Roaster
+   will roast, grind and brew a delicious cup of coffee wherever you go!
+      A small reservoir of water will never spill or leak. The ready-to-be
+       roasted beans are safely stored in an airtight plastic canister
+       and the brewed coffee can be set to any temperature. Why wait for
+        the freshest, best-tasting coffee?",
+  tagline: "Portable coffee roaster, grinder and brewer is as convenient as it is delicious!",
   end_date: Date.new(2017, 9, 3),
-  funding_goal: 200,
+  funding_goal: 9000,
   creator_id: user1.id,
-  category_id: 8,
-  funded: 160
+  category_id: 4,
+  funded: 2400
+)
+
+Reward.create(
+  project_id: project5.id,
+  title: "House Blend",
+  description: "One BRAVE LITTLE ROASTR",
+  cost: 150
+)
+
+Reward.create(
+  project_id: project5.id,
+  title: "Pour Over",
+  description: " One BRAVE LITTLE ROASTR with a custom made carring case",
+  cost: 200
+)
+
+Reward.create(
+  project_id: project5.id,
+  title: "Artisan Blend",
+  description: "Two BRAVE LITTLE ROASTR's and 2 custom made carring case",
+  cost: 350
 )
 
 
-Project.create!(
-  title: "Does the Weather Really Affect Mood?",
-  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg",
-  description: "Does weather have any effect on mood?
-  Are people more likely to be dissatisfied or melancholy on a rainy,
-  overcast day? Are people more likely to be happy on a sunny day?
-  Is one gender or age group more likely to be influenced by the weather?",
-  tagline: "It has long been believed that weather has influence over
-  people's mood and behavior.",
+project6 = Project.create!(
+  title: "Moblie Tree Home",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501190970/NCKSTRTR_MOBILE_TREE_HOME_001_zbvznc.jpg",
+  description: "Completely self-sufficient and off-the-grid living can
+  by yours up where the air is fine! Mobile Tree Homes are custom made
+  to order, brought to your site and raised up to the canopy. Expert
+  home builders lavish their craft on your very own nest in the branches.
+   Professional drivers deliver to almost any safely accessible landscape.
+    Financing available on approved credit!",
+  tagline: "Tarzan never had it so good!",
   end_date: Date.new(2020, 11, 5),
-  funding_goal: 200,
+  funding_goal: 2000000,
   creator_id: user1.id,
-  category_id: 8,
-  funded: 180
+  category_id: 3,
+  funded: 125000
+)
+
+Reward.create(
+  project_id: project6.id,
+  title: "Moblie Tree Home",
+  description: "Moblie Tree Home is not only doable for a couple, but also with some extra furry friends included",
+  cost: 125000
+)
+
+Reward.create(
+  project_id: project6.id,
+  title: "Moblie Tree Home with double closets",
+  description: "With two people living together, you can never go wrong with more storage",
+  cost: 155000
+)
+
+Reward.create(
+  project_id: project6.id,
+  title: "Moblie Tree Home with a separate bedroom",
+  description: "allows lovers a bit of privacy with a separate bedroom
+  towards the back, in addition to a loft bed for any guests.",
+  cost: 175000
 )
 
 

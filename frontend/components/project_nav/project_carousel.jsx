@@ -12,10 +12,10 @@ const ProjectCarousel = () => (
     </div>
 
     <div className="project-carousel-slide">
-      <h1>THE WOMAN WHO FELL TO EARTH</h1>
-      <h2>Follow the exploits of our heroine as she tries to make sense of, and peace with, crazy Earthlings!</h2>
+      <h1>BRAVE LITTLE ROASTR</h1>
+      <h2>Portable coffee roaster, grinder and brewer is as convenient as it is delicious!</h2>
       <a href="#/project/3"><button>View project</button></a>
-      <img src="http://res.cloudinary.com/dj1l8etr0/image/upload/v1501108745/NCKSTRTR_GRAPHIC_NOVEL_003_ei4jbg.jpg" />
+      <img src="http://res.cloudinary.com/dj1l8etr0/image/upload/v1501184576/NCKSTRTR_BRAVE_LITTLE_ROASTER_003_uqslzf.jpg" />
     </div>
 
     <div className="project-carousel-slide">
@@ -33,10 +33,10 @@ const ProjectCarousel = () => (
     </div>
 
     <div className="project-carousel-slide">
-      <h1>title</h1>
-      <h2>subtitle</h2>
+      <h1>Moblie Tree Home</h1>
+      <h2>Tarzan never had it so good!</h2>
       <a href="#/project/1"><button>View project</button></a>
-      <img src="http://res.cloudinary.com/dj1l8etr0/image/upload/v1500917416/yllkkwu6uomxasgrut0f.jpg" />
+      <img src="http://res.cloudinary.com/dj1l8etr0/image/upload/v1501190970/NCKSTRTR_MOBILE_TREE_HOME_001_zbvznc.jpg" />
     </div>
   </Carousel>
 );
