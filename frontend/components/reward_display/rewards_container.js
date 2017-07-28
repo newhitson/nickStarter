@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Rewards from './rewards';
-import {withRouter} from 'react-router';
+import { withRouter } from 'react-router';
 
 import { selectAllRewards } from '../../reducers/selectors';
 import { requestRewards } from '../../actions/rewards_actions';

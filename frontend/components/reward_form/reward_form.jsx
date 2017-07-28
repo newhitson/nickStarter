@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, withRouter, Redirect } from 'react-router-dom';
-
+import RewardFormBlurb from './reward_form_blurb';
 
 
 class RewardForm extends React.Component {
@@ -23,6 +23,7 @@ class RewardForm extends React.Component {
 
   componentWillMount(){
     this.props.requestSingleProject();
+    this.props.requestRewards();
   }
 
   componentDidMount(){
@@ -51,6 +52,8 @@ class RewardForm extends React.Component {
   }
 
   render() {
+    const { rewards } = this.props;
+    console.log(this.props);
     if (!this.props.isOwner) {
       return( <Redirect to="/" />);
     }
@@ -147,7 +150,10 @@ class RewardForm extends React.Component {
                   value="Submit" />
             </form>
         <div className="project_form_sidebar" >
-
+          <div>
+            {rewards.map(reward => <RewardFormBlurb key={reward.id}
+               reward={reward}/>)}
+          </div>
         </div>
         </div>
       </div>
