@@ -27,12 +27,7 @@ class Category extends React.Component {
                 </div>
             </div>
           </div>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+
     </section>
 
 

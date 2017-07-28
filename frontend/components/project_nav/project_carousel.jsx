@@ -5,6 +5,13 @@ import Decorators from "./decorators";
 const ProjectCarousel = () => (
   <Carousel wrapAround={true} autoplay={true} autoplayInterval={2250} decorators={Decorators}>
     <div className="project-carousel-slide">
+      <h1>Start a project. Get Funded.</h1>
+      <h2>NickStarter creatives craft project that will shape the world of tomorrow</h2>
+      <a href="#/"></a>
+      <img src="http://res.cloudinary.com/dj1l8etr0/image/upload/v1501276935/philip-swinburn-60229_yspzzi.jpg" />
+    </div>
+
+    <div className="project-carousel-slide">
       <h1>TEMPLE CITY</h1>
       <h2>Amass more devoted followers than your rivals in this innovative video game set in deep space!</h2>
       <a href="#/project/3"><button>View project</button></a>

@@ -7,9 +7,7 @@ class Rewards extends React.Component {
 
   componentDidMount() {
     this.props.requestRewards(this.props.match.params.projectId);
-    //this.props.params.match.projectId
   }
-  // {projects.map(pro => <ProjectBlurb key={pro.id}project={pro} />)}
 
   render() {
     const { rewards, createPledge } = this.props;
