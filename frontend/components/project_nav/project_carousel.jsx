@@ -3,7 +3,7 @@ import Carousel from "nuka-carousel";
 import Decorators from "./decorators";
 
 const ProjectCarousel = () => (
-  <Carousel wrapAround={true} autoplay={true} autoplayInterval={2250} decorators={Decorators}>
+  <Carousel wrapAround={true} autoplay={true} autoplayInterval={2800} decorators={Decorators}>
     <div className="project-carousel-slide">
       <h1>Start a project. Get Funded.</h1>
       <h2>NickStarter creatives craft project that will shape the world of tomorrow</h2>
@@ -40,7 +40,7 @@ const ProjectCarousel = () => (
     </div>
 
     <div className="project-carousel-slide">
-      <h1>Moblie Tree Home</h1>
+      <h1>MOBILE TREE HOME</h1>
       <h2>Tarzan never had it so good!</h2>
       <a href="#/project/1"><button>View project</button></a>
       <img src="http://res.cloudinary.com/dj1l8etr0/image/upload/v1501190970/NCKSTRTR_MOBILE_TREE_HOME_001_zbvznc.jpg" />
