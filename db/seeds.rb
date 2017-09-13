@@ -912,3 +912,81 @@ Reward.create(
   description: "Receive a Pier table designed to be placed against a wall",
   cost: 50
 )
+
+project23 = Project.create!(
+  title: "The last pants you will ever need",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1505339579/crew-59379_c2sot4.jpg",
+  description: "Trousers (British English) or pants (American English)
+  are an item of clothing worn from the waist to the ankles, covering
+  both legs separately (rather than with cloth extending across both legs
+  as in robes, skirts, and dresses).
+
+  In the UK, the word pants generally means underwear and not trousers.
+  Shorts are similar to trousers, but with legs that come down only to
+  around the area of the knee, higher or lower depending on the style of
+  the garment. To distinguish them from shorts, trousers may be called
+  long trousers in certain contexts such as school uniform, where
+  tailored shorts may be called short trousers, especially in the UK.
+
+  The oldest known trousers are found at the Yanghai cemetery in Turpan
+  , Xinjiang, western China, dated to the period between the 13th and
+  the 10th centuries BC. Made of wool, the trousers had straight legs
+  and wide crotches, and were likely made for horseback riding.",
+  tagline: "You will never need to buy another pair of pants",
+  end_date: Date.new(2018, 3, 12),
+  funding_goal: 34000,
+  creator_id: user1.id,
+  category_id: 3,
+  funded: 15000
+)
+
+Reward.create(
+  project_id: project23.id,
+  title: "THE PANTS",
+  description: "Receive a console table which sometimes imitate the look
+   of a bracket-mounted table.",
+  cost: 45
+)
+
+project24 = Project.create!(
+  title: "Travel Backpack",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1505341095/nick-cooper-369563_yafv3d.jpg",
+  description: "Large backpacks, used to carry loads over 10 kilograms
+  (22 lb), as well as smaller sports backpacks (e.g. running, cycling,
+  hiking and hydration), usually offload the largest part (up to about
+  90%) of their weight onto padded hip belts, leaving the shoulder straps
+  mainly for stabilising the load. This improves the potential to carry
+  heavy loads, as the hips are stronger than the shoulders, and also
+  increases agility and balance, since the load rides nearer the
+  wearer's own center of mass.
+
+  In ancient times, the backpack was used as a means to carry the
+  hunter's larger game and other types of prey and as a way of easier
+  transport for other materials. They were also easy to carry and made
+  of cloths. In the cases of larger hunts, the hunters would dismember
+  their prey and distribute the pieces of the animal around, each one
+  packing the meat into many wrappings and then into bags which they
+  placed on to their backs. The bag itself would be made up of animal
+  hide and skin and sewn together by animal intestines, which would be
+  woven together tightly to make a sturdy thread-like material.
+",
+  tagline: "A pack for your back",
+  end_date: Date.new(2018, 4, 16),
+  funding_goal: 4500,
+  creator_id: user2.id,
+  category_id: 3,
+  funded: 3000
+)
+
+Reward.create(
+  project_id: project24.id,
+  title: "smaller sport backpack",
+  description: "Backpacks made for running or cycling",
+  cost: 45
+)
+Reward.create(
+  project_id: project24.id,
+  title: "Large backpack",
+  description: "Used to carry loads over 10 kilograms",
+  cost: 50
+)
