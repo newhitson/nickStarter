@@ -762,40 +762,108 @@ Reward.create(
 
 
 project19 = Project.create!(
-  title: "Connecting the world through coffee",
-  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1505264308/matt-hoffman-158288_aalpfs.jpg",
-  description: "Coffee is a brewed drink prepared from roasted coffee
-  beans, which are the seeds of berries from the Coffea plant. The genus
-  Coffea is native to tropical Africa (specifically having its origin
-  in Ethiopia and Sudan) and Madagascar, the Comoros, Mauritius, and
-  Réunion in the Indian Ocean. The plant was exported from Africa to
-  countries around the world and coffee plants are now cultivated in
-  over 70 countries, primarily in the equatorial regions of the Americas,
-  Southeast Asia, India, and Africa. The two most commonly grown are the
-  highly regarded arabica, and the less sophisticated but stronger and
-  more hardy robusta. Once ripe, coffee berries are picked, processed,
-  and dried. Dried coffee seeds (referred to as beans) are roasted to
-  varying degrees, depending on the desired flavor. Roasted beans are
-  ground and brewed with near-boiling water to produce coffee as a
-  beverage.",
-  tagline: "Coffee is more than a drink. For many of us — OK, for me —
-  it's woven into the fabric of every day",
-  end_date: Date.new(2018, 3, 27),
-  funding_goal: 2500,
-  creator_id: user3.id,
+  title: "ENGINEERING THE PERFECT EGG",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1505333829/jakub-kapusnak-296865_mtag3z.jpg",
+  description: "Eggs are laid by female animals of many different
+  species, including birds, reptiles, amphibians, mammals, and fish, and
+  have been eaten by humans for thousands of years. Bird and reptile
+  eggs consist of a protective eggshell, albumen (egg white), and
+  vitellus (egg yolk), contained within various thin membranes. The most
+  popular choice for egg consumption are chicken eggs. Other popular
+  choices for egg consumption are duck, quail, roe, and caviar.",
+  tagline: "The bird fights its way out of the egg. The egg is the world.
+   Whoever will be born must destroy a world.",
+  end_date: Date.new(2018, 6, 15),
+  funding_goal: 100000,
+  creator_id: user1.id,
   category_id: 4,
-  funded: 800
+  funded: 90000
 )
 
 Reward.create(
   project_id: project19.id,
-  title: "Starbucks",
-  description: "One Pound of Coffee beans",
-  cost: 10
+  title: "Dozen",
+  description: "Access to the Perfect Eggs for 12 months",
+  cost: 100
 )
 Reward.create(
   project_id: project19.id,
-  title: "Blue Bottle",
-  description: "Ten Pounds of Coffee beans",
-  cost: 90
+  title: "Bakers Dozen",
+  description: "Access to the Perfect Eggs for 13 months",
+  cost: 110
+)
+
+
+project20 = Project.create!(
+  title: "The Comic Book Project",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1505334956/mitch-rosen-203803_vky3da.jpg",
+  description: "Comics is a medium used to express ideas by images,
+  often combined with text or other visual information. Comics
+  frequently takes the form of juxtaposed sequences of panels of images.
+   Often textual devices such as speech balloons, captions, and
+   onomatopoeia indicate dialogue, narration, sound effects, or other
+   information. Size and arrangement of panels contribute to narrative
+   pacing. Cartooning and similar forms of illustration are the most
+   common image-making means in comics; fumetti is a form which uses
+   photographic images. Common forms of comics include comic strips,
+  editorial and gag cartoons, and comic books. Since the late 20th
+  century, bound volumes such as graphic novels, comic albums, and
+  tankobon have become increasingly common, and online webcomics have
+  proliferated in the 21st century.",
+  tagline: "a world-renowned literacy initiative that engages young people",
+  end_date: Date.new(2018, 3, 19),
+  funding_goal: 500,
+  creator_id: user2.id,
+  category_id: 4,
+  funded: 245
+)
+
+Reward.create(
+  project_id: project20.id,
+  title: "A Page",
+  description: "Receive a full page of comics from one of our students",
+  cost: 5
+)
+Reward.create(
+  project_id: project20.id,
+  title: "A Whole Book",
+  description: "Receive a book of comics from one of our students",
+  cost: 20
+)
+
+project21 = Project.create!(
+  title: "The Comic Book Project",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1505336150/jon-tyson-228428_mllecu.jpg",
+  description: "Comics is a medium used to express ideas by images,
+  often combined with text or other visual information. Comics
+  frequently takes the form of juxtaposed sequences of panels of images.
+   Often textual devices such as speech balloons, captions, and
+   onomatopoeia indicate dialogue, narration, sound effects, or other
+   information. Size and arrangement of panels contribute to narrative
+   pacing. Cartooning and similar forms of illustration are the most
+   common image-making means in comics; fumetti is a form which uses
+   photographic images. Common forms of comics include comic strips,
+  editorial and gag cartoons, and comic books. Since the late 20th
+  century, bound volumes such as graphic novels, comic albums, and
+  tankobon have become increasingly common, and online webcomics have
+  proliferated in the 21st century.",
+  tagline: "a world-renowned literacy initiative that engages young people",
+  end_date: Date.new(2018, 3, 19),
+  funding_goal: 500,
+  creator_id: user2.id,
+  category_id: 4,
+  funded: 245
+)
+
+Reward.create(
+  project_id: project20.id,
+  title: "A Page",
+  description: "Receive a full page of comics from one of our students",
+  cost: 5
+)
+Reward.create(
+  project_id: project20.id,
+  title: "A Whole Book",
+  description: "Receive a book of comics from one of our students",
+  cost: 20
 )
