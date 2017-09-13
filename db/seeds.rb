@@ -832,38 +832,40 @@ Reward.create(
 )
 
 project21 = Project.create!(
-  title: "The Comic Book Project",
+  title: "C for Comics",
   image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1505336150/jon-tyson-228428_mllecu.jpg",
-  description: "Comics is a medium used to express ideas by images,
-  often combined with text or other visual information. Comics
-  frequently takes the form of juxtaposed sequences of panels of images.
-   Often textual devices such as speech balloons, captions, and
-   onomatopoeia indicate dialogue, narration, sound effects, or other
-   information. Size and arrangement of panels contribute to narrative
-   pacing. Cartooning and similar forms of illustration are the most
-   common image-making means in comics; fumetti is a form which uses
-   photographic images. Common forms of comics include comic strips,
-  editorial and gag cartoons, and comic books. Since the late 20th
-  century, bound volumes such as graphic novels, comic albums, and
-  tankobon have become increasingly common, and online webcomics have
-  proliferated in the 21st century.",
-  tagline: "a world-renowned literacy initiative that engages young people",
-  end_date: Date.new(2018, 3, 19),
-  funding_goal: 500,
+  description: "V for Vendetta is a British graphic novel written by
+  Alan Moore and illustrated by David Lloyd (with additional art by Tony
+  Weare), published by DC Comics. Later versions were published by Vertigo,
+  an imprint of DC Comics. The story depicts a dystopian and
+  post-apocalyptic near-future history version of the United Kingdom in
+  the 1990s, preceded by a nuclear war in the 1980s which had devastated
+  most of the rest of the world. The fascist Norsefire party has
+  exterminated its opponents in concentration camps and rules the country
+  as a police state. The comics follow its title character and protagonist,
+  V, an anarchist revolutionary dressed in a Guy Fawkes mask, as he begins
+  an elaborate and theatrical revolutionist campaign to kill his former
+  captors, bring down the fascist state and convince the people to abandon
+  democracy in favour of anarchy, while inspiring a young woman, Evey
+  Hammond, to be his protégé. Warner Bros. released a film adaptation of
+   the same title in 2006.",
+  tagline: "Behind the Painted Smile",
+  end_date: Date.new(2018, 2, 29),
+  funding_goal: 3000,
   creator_id: user2.id,
   category_id: 4,
-  funded: 245
+  funded: 2045
 )
 
 Reward.create(
   project_id: project20.id,
-  title: "A Page",
-  description: "Receive a full page of comics from one of our students",
-  cost: 5
+  title: "The Finger",
+  description: "begins investigating V's activities",
+  cost: 50
 )
 Reward.create(
   project_id: project20.id,
-  title: "A Whole Book",
+  title: "the Mouth",
   description: "Receive a book of comics from one of our students",
-  cost: 20
+  cost: 45
 )
