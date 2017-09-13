@@ -759,3 +759,43 @@ Reward.create(
   description: "Ten Pounds of Coffee beans",
   cost: 90
 )
+
+
+project19 = Project.create!(
+  title: "Connecting the world through coffee",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1505264308/matt-hoffman-158288_aalpfs.jpg",
+  description: "Coffee is a brewed drink prepared from roasted coffee
+  beans, which are the seeds of berries from the Coffea plant. The genus
+  Coffea is native to tropical Africa (specifically having its origin
+  in Ethiopia and Sudan) and Madagascar, the Comoros, Mauritius, and
+  Réunion in the Indian Ocean. The plant was exported from Africa to
+  countries around the world and coffee plants are now cultivated in
+  over 70 countries, primarily in the equatorial regions of the Americas,
+  Southeast Asia, India, and Africa. The two most commonly grown are the
+  highly regarded arabica, and the less sophisticated but stronger and
+  more hardy robusta. Once ripe, coffee berries are picked, processed,
+  and dried. Dried coffee seeds (referred to as beans) are roasted to
+  varying degrees, depending on the desired flavor. Roasted beans are
+  ground and brewed with near-boiling water to produce coffee as a
+  beverage.",
+  tagline: "Coffee is more than a drink. For many of us — OK, for me —
+  it's woven into the fabric of every day",
+  end_date: Date.new(2018, 3, 27),
+  funding_goal: 2500,
+  creator_id: user3.id,
+  category_id: 4,
+  funded: 800
+)
+
+Reward.create(
+  project_id: project19.id,
+  title: "Starbucks",
+  description: "One Pound of Coffee beans",
+  cost: 10
+)
+Reward.create(
+  project_id: project19.id,
+  title: "Blue Bottle",
+  description: "Ten Pounds of Coffee beans",
+  cost: 90
+)
