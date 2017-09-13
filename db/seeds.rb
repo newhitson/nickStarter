@@ -814,7 +814,7 @@ project20 = Project.create!(
   end_date: Date.new(2018, 3, 19),
   funding_goal: 500,
   creator_id: user2.id,
-  category_id: 4,
+  category_id: 2,
   funded: 245
 )
 
@@ -830,6 +830,7 @@ Reward.create(
   description: "Receive a book of comics from one of our students",
   cost: 20
 )
+
 
 project21 = Project.create!(
   title: "C for Comics",
@@ -852,20 +853,62 @@ project21 = Project.create!(
   tagline: "Behind the Painted Smile",
   end_date: Date.new(2018, 2, 29),
   funding_goal: 3000,
-  creator_id: user2.id,
-  category_id: 4,
+  creator_id: user3.id,
+  category_id: 2,
   funded: 2045
 )
 
 Reward.create(
-  project_id: project20.id,
+  project_id: project21.id,
   title: "The Finger",
   description: "begins investigating V's activities",
   cost: 50
 )
 Reward.create(
-  project_id: project20.id,
+  project_id: project21.id,
   title: "the Mouth",
-  description: "Receive a book of comics from one of our students",
+  description: "broadcast a speech that calls on the people to resist the government",
   cost: 45
+)
+
+project22 = Project.create!(
+  title: "Reclaimed Wood Train Table",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1505336150/jon-tyson-228428_mllecu.jpg",
+  description: "A table is an item of furniture with a flat top and one
+  or more legs, used as a surface for working at, eating from or on
+  which to place things. Some common types of table are the dining room
+  table, which is used for seated persons to eat meals; the coffee table,
+  which is a low table used in living rooms to display items or serve
+  refreshments; and the bedside table, which is used to place an alarm
+  clock and a lamp. There are also a range of specialized types of tables,
+  such as drafting tables, used for doing architectural drawings, and
+  sewing tables.
+
+  Tables come in a wide variety of materials, shapes, and heights
+  dependent upon their origin, style, intended use and cost. Many tables
+   are made of wood or wood-based products; some are made of other materials
+  including metal and glass. Most tables are composed of a flat surface
+  and one or more supports (legs). A table with a single, central foot
+  is a pedestal table. Long tables often have extra legs for support.
+",
+  tagline: "A board, plank, flat top piece",
+  end_date: Date.new(2018, 4, 16),
+  funding_goal: 1900,
+  creator_id: user2.id,
+  category_id: 3,
+  funded: 120
+)
+
+Reward.create(
+  project_id: project22.id,
+  title: "Board",
+  description: "Receive a console table which sometimes imitate the look
+   of a bracket-mounted table.",
+  cost: 45
+)
+Reward.create(
+  project_id: project22.id,
+  title: "Plank",
+  description: "Receive a Pier table designed to be placed against a wall",
+  cost: 50
 )
