@@ -603,7 +603,7 @@ Reward.create(
   cost: 200
 )
 
-project14 = Project.create!(
+project15 = Project.create!(
   title: "Rock Hard Controller Skin",
   image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1501273741/sherry-zhu-196388_ealcyr.jpg",
   description: "A gamepad, also known as a joypad, is held in both hands
@@ -625,14 +625,98 @@ project14 = Project.create!(
 )
 
 Reward.create(
-  project_id: project14.id,
+  project_id: project15.id,
   title: "Game skin",
   description: "One skin to attach to a controller",
   cost: 20
 )
 Reward.create(
-  project_id: project14.id,
+  project_id: project15.id,
   title: "Two Game skin",
-  description: "Tne skin to attach to a controller",
+  description: "Two skin to attach to a controller",
   cost: 30
+)
+
+project16 = Project.create!(
+  title: "Fruit Pantry",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1505261871/igor-ovsyannykov-223090_vsevhv.jpg",
+  description: "In botany, a fruit is the seed-bearing structure in
+  flowering plants (also known as angiosperms) formed from the ovary
+  after flowering.
+
+  Fruits are the means by which angiosperms disseminate seeds. Edible
+  fruits, in particular, have propagated with the movements of humans
+  and animals in a symbiotic relationship as a means for seed dispersal
+  and nutrition; in fact, humans and many animals have become dependent
+  on fruits as a source of food. Accordingly, fruits account for a
+  substantial fraction of the world's agricultural output, and some
+  (such as the apple and the pomegranate) have acquired extensive
+  cultural and symbolic meanings.
+
+In common language usage, fruit normally means the fleshy seed-associated
+ structures of a plant that are sweet or sour, and edible in the raw
+ state, such as apples, bananas, grapes, lemons, oranges, and strawberries
+ .On the other hand, in botanical usage, fruit includes many structures
+ that are not commonly called fruits, such as bean pods, corn kernels,
+ tomatoes, and wheat grains The section of a fungus that produces
+  spores is also called a fruiting body.",
+  tagline: "When a fruit cabinet just isn't enough",
+  end_date: Date.new(2018, 6, 16),
+  funding_goal: 50000,
+  creator_id: user1.id,
+  category_id: 4,
+  funded: 200
+)
+
+Reward.create(
+  project_id: project16.id,
+  title: "Stray grape",
+  description: "A Paultry Pantry",
+  cost: 45
+)
+Reward.create(
+  project_id: project16.id,
+  title: "Banana for scale",
+  description: "A Plentiful Pantry",
+  cost: 60
+)
+
+project17 = Project.create!(
+  title: "Sansa's Lemon Cakes",
+  image_url: "http://res.cloudinary.com/dj1l8etr0/image/upload/v1505263477/annie-spratt-133872_px8x7m.jpg",
+  description: "Olenna and Margaery Tyrell share some lemon cakes with
+  Sansa Stark when they meet her in the gardens of the Red Keep to learn
+   more about King Joffrey Baratheon, now Margaery's future husband.
+   Sansa reveals that Joffrey is a monster.
+   Shae offers Sansa some lemon cakes to try to get her to eat something
+   , noting that they are her favorite, but Sansa is so griefstricken
+  after the hearing about the horrific deaths of her brother Robb and
+  her mother Catelyn at the Red Wedding that she doesn't have the will
+  to eat anything.
+
+   In the Eyrie Sansa eats lemon cakes with her aunt and they discuss
+   how Catelyn was banned from eating sweet foods as a child as she had
+    begun to grow fat and had to be beautiful to get a good suitor.
+    Sansa then queries how they make the cakes as it would not be
+    possible to grow lemon cakes in the Vale.",
+
+  tagline: "Shall we have some lemon cakes?",
+  end_date: Date.new(2019, 5, 10),
+  funding_goal: 500,
+  creator_id: user2.id,
+  category_id: 4,
+  funded: 60
+)
+
+Reward.create(
+  project_id: project17.id,
+  title: "Olenna Tyrell",
+  description: "A Paultry Pantry",
+  cost: 45
+)
+Reward.create(
+  project_id: project17.id,
+  title: "Banana for scale",
+  description: "A Plentiful Pantry",
+  cost: 60
 )
